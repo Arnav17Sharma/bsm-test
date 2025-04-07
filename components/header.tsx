@@ -97,7 +97,7 @@ export default function Header() {
     >
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-        <svg width="1211" height="253" viewBox="0 0 1211 253" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "230px", height: "auto" }}>
+        <svg width="1211" height="253" viewBox="0 0 1211 253" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "180px", height: "auto" }}>
           <g id="LOGOMAIN">
           <g id="logo2">
           <g id="Group">
