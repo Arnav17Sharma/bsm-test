@@ -89,12 +89,12 @@ export default function Header() {
   ]
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-transparent",
-      )}
-    >
+      <header
+        className={cn(
+          "fixed top-0 z-50 w-full transition-all duration-300",
+          isScrolled ? "bg-gray-300 dark:bg-transparent backdrop-blur-md shadow-sm" : "bg-transparent",
+        )}
+      >
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
         <svg width="1211" height="253" viewBox="0 0 1211 253" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "180px", height: "auto" }}>
