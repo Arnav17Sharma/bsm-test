@@ -21,8 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script src="mapdata.js"></script>
-        <script src="countrymap.js"></script>
+        <script src="/mapdata.js"></script>
+        <script src="/countrymap.js"></script>
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">

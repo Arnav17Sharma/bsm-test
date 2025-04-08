@@ -93,7 +93,7 @@ export default function BlogsPage() {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-6 mb-12">
+          {/* <div className="flex flex-col md:flex-row gap-6 mb-12">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input placeholder="Search articles..." className="pl-10 border-blue-100 dark:border-blue-900" />
@@ -114,7 +114,7 @@ export default function BlogsPage() {
                 </Button>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {blogs.map((blog, index) => (
