@@ -1,8 +1,11 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { CheckCircle, ArrowRight, Award, Clock, Users, Sparkles, Building, Briefcase } from "lucide-react"
 import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
+import { motion } from "framer-motion"
 
 export default function AboutPage() {
   const keyPoints = [
@@ -167,40 +170,98 @@ export default function AboutPage() {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-red-600 transform -translate-x-1/2 hidden md:block"></div>
+            <motion.div
+              className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-red-600 transform -translate-x-1/2 hidden md:block"
+              initial={{ height: "0%" }}
+              whileInView={{ height: "100%" }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              viewport={{ once: true }}
+            ></motion.div>
 
             {/* Timeline events */}
-            <div className="space-y-12 relative">
+            <motion.div
+              className="space-y-12 relative"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.3,
+                  },
+                },
+              }}
+            >
               {timeline.map((event, index) => (
-                <div
+                <motion.div
                   key={index}
                   className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.3 }}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    },
+                  }}
                 >
-                  <div className={`flex-1 text-center ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
-                    <div className="inline-block bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md mb-2">
+                  <motion.div
+                    className={`flex-1 text-center ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}
+                    whileHover={{ y: -5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <motion.div
+                      className="inline-block bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md mb-2"
+                      whileHover={{ scale: 1.05, backgroundColor: "#ED1C24" }}
+                    >
                       {event.year}
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2">{event.title}</h3>
-                    <p className="text-muted-foreground">{event.description}</p>
-                  </div>
+                    </motion.div>
+                    <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                      {event.title}
+                    </h3>
+                    <p className="text-muted-foreground transition-colors duration-300">{event.description}</p>
+                  </motion.div>
 
-                  <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-500/10 to-red-500/10 ring-4 ring-background">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-slate-900 shadow-lg border border-blue-100 dark:border-blue-900">
+                  <motion.div
+                    className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-500/10 to-red-500/10 ring-4 ring-background"
+                    whileHover={{ scale: 1.15, rotate: 5 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 10 }}
+                  >
+                    <motion.div
+                      className="flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-slate-900 shadow-lg border border-blue-100 dark:border-blue-900"
+                      whileHover={{ backgroundColor: "#f0f9ff" }}
+                    >
                       {event.icon}
-                    </div>
-                    <div className="absolute inset-0 rounded-full blur-md bg-gradient-to-r from-blue-500/20 to-red-500/20"></div>
-                  </div>
+                    </motion.div>
+                    <motion.div
+                      className="absolute inset-0 rounded-full blur-md bg-gradient-to-r from-blue-500/20 to-red-500/20"
+                      whileHover={{ opacity: 0.8 }}
+                    ></motion.div>
+                  </motion.div>
 
-                  <div className="flex-1 text-center md:hidden">
-                    <div className="inline-block bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md mb-2">
+                  <motion.div
+                    className="flex-1 text-center md:hidden"
+                    whileHover={{ y: -5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <motion.div
+                      className="inline-block bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md mb-2"
+                      whileHover={{ scale: 1.05 }}
+                    >
                       {event.year}
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2">{event.title}</h3>
-                    <p className="text-muted-foreground">{event.description}</p>
-                  </div>
-                </div>
+                    </motion.div>
+                    <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                      {event.title}
+                    </h3>
+                    <p className="text-muted-foreground transition-colors duration-300">{event.description}</p>
+                  </motion.div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -313,4 +374,3 @@ export default function AboutPage() {
 }
 
 import { Store, MapPin, ShoppingCart, Zap, Cpu, Globe } from "lucide-react"
-

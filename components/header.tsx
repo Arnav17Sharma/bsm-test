@@ -92,7 +92,7 @@ export default function Header() {
       <header
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-300",
-          isScrolled ? "bg-gray-300 dark:bg-transparent backdrop-blur-md shadow-sm" : "bg-transparent",
+          isScrolled ? "bg-white-800 dark:bg-transparent backdrop-blur-md shadow-sm" : "bg-transparent",
         )}
       >
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">

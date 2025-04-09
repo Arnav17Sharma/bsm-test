@@ -1,0 +1,78 @@
+/* General animation for all elements */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Base styles for all SVG elements */
+  svg #fork_trucks,
+  svg #warehouse_text,
+  svg #pallets,
+  svg #transport,
+  svg #warehouse_rack,
+  svg #warehouse_cargo2,
+  svg #warehouse_cargo1,
+  svg #logistics,
+  svg #unloading
+   {
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 5s ease-out both;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+  
+  /* Individual delays for each element */
+  
+  svg #warehouse_text {
+    animation-delay: 0.5s;
+  }
+
+  
+  svg #pallets {
+    animation-delay: 1s;
+  }
+  
+  svg #logistics {
+    animation-delay: 1.5s;
+  }
+
+  svg #transport {
+    animation-delay: 2s;
+  }
+  
+  svg #unloading {
+    animation-delay: 2.5s;
+  }
+
+  svg #warehouse_cargo2 {
+    animation-delay: 3s;
+  }
+  
+  svg #warehouse_cargo1 {
+    animation-delay: 3.5s;
+  }
+  
+  svg #fork_trucks {
+    animation-delay: 4s;
+  }
+
+  svg #warehouse_rack {
+    animation-delay: 4.5s;
+  }
+
+
+  @keyframes state {
+    0% {
+      opacity: 1;
+      transform: translateZ(2px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

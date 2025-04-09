@@ -10,7 +10,6 @@ export const metadata = {
   title: "BSM - Tech-Enabled Distribution & Fulfillment",
   description:
     "Next-generation, tech-enabled distribution and fulfillment company, optimizing omnichannel commerce for brands.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -23,6 +22,7 @@ export default function RootLayout({
       <head>
         <script src="/mapdata.js"></script>
         <script src="/countrymap.js"></script>
+        <link rel="stylesheet" href="/svgs.css" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">

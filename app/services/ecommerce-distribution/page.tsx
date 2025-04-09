@@ -85,10 +85,10 @@ export default function EcommerceDistributionPage() {
             </div>
 
             <div className="relative">
-              <div className="aspect-video overflow-hidden rounded-xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-red-500/10 to-transparent z-10"></div>
+              <div className="overflow-hidden rounded-xl">
+                <div className="absolute inset-0 z-10"></div>
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/E-Commerce%20Distribution%20&%20Fulfillment.svg"
                   alt="E-Commerce Fulfillment"
                   className="object-cover w-full h-full"
                 />

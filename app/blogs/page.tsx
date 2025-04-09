@@ -93,6 +93,23 @@ export default function BlogsPage() {
             </p>
           </div>
 
+          <div className="flex flex-col sm:flex-row gap-4 pt-10">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 mb-4">Subscribe to Our Newsletter</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+                Stay updated with the latest industry insights, distribution trends, and BSM news.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 mx-auto">
+            <Input placeholder="Your email address" className="border-blue-100 dark:border-blue-900" style={{width: "400px"}} />
+            <Button className="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700">
+              Subscribe
+            </Button>
+            </div>
+          </div>
+
+          <SectionDivider />
+
           {/* <div className="flex flex-col md:flex-row gap-6 mb-12">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -116,7 +133,7 @@ export default function BlogsPage() {
             </div>
           </div> */}
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-20">
             {blogs.map((blog, index) => (
               <Card
                 key={index}
