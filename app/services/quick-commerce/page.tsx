@@ -3,6 +3,7 @@ import { ArrowRight, Zap, CheckCircle, Clock, Package, Truck } from "lucide-reac
 import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
+import Footer from "@/components/footer"
 
 export default function QuickCommercePage() {
   const features = [
@@ -166,6 +167,7 @@ export default function QuickCommercePage() {
           </Link>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

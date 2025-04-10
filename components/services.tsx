@@ -100,11 +100,11 @@ export default function Services() {
               <h3 className="mt-2 text-center font-medium">States we are operational!</h3>
             </div>
             <div className="flex h-[100px] w-[340px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900">
-                <div className="h-10 w-10" style={{ backgroundColor: "#4384F3" }}></div>
+                <div className="h-10 w-10" style={{ backgroundColor: "grey" }}></div>
               <h3 className="mt-2 text-center font-medium">Currently Unavailable!</h3>
             </div>
             <div className="flex h-[auto] w-[340px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900">
-            <img src="/placeholder.png" alt="Office Icon" className="h-10 w-10" />
+            <img src="/locations_3452143.png" alt="Office Icon" className="h-12 w-12" />
             <h3 className="mt-2 text-center font-medium">Delhi, Head Office (2 Facilities)</h3>
             <h3 className="mb-4 text-center font-medium">Mumbai (1 Facility)</h3>
           </div>

@@ -4,6 +4,7 @@ import { ArrowRight, BarChart2, TrendingUp } from "lucide-react"
 import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
+import Footer from "@/components/footer"
 
 export default function CaseStudiesPage() {
   const caseStudies = [
@@ -180,6 +181,7 @@ export default function CaseStudiesPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

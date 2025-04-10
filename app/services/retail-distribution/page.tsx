@@ -3,6 +3,7 @@ import { ArrowRight, Store, CheckCircle, BarChart2, Package, Truck } from "lucid
 import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
+import Footer from "@/components/footer"
 
 export default function RetailDistributionPage() {
   const features = [
@@ -165,6 +166,7 @@ export default function RetailDistributionPage() {
           </Link>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

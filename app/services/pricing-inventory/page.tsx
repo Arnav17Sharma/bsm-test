@@ -3,6 +3,7 @@ import { ArrowRight, BarChart3, CheckCircle, LineChart, TrendingUp, DollarSign }
 import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
+import Footer from "@/components/footer"
 
 export default function PricingInventoryPage() {
   const features = [
@@ -166,6 +167,7 @@ export default function PricingInventoryPage() {
           </Link>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

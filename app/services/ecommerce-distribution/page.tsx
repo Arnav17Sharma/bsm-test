@@ -3,7 +3,7 @@ import { ArrowRight, ShoppingCart, CheckCircle, BarChart2, Package, Truck } from
 import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
-
+import Footer from "@/components/footer"
 export default function EcommerceDistributionPage() {
   const features = [
     {
@@ -36,7 +36,7 @@ export default function EcommerceDistributionPage() {
     "Enhanced brand reputation through consistent fulfillment",
   ]
 
-  const platforms = ["Amazon", "Flipkart", "Myntra", "Nykaa", "Blinkit", "Zepto", "BigBasket", "JioMart"]
+  const platforms = ["/amazon.svg", "/Flipkart-logo.jpg", "/myntra-logo-01.jpg", "/nykaa-logo-png_seeklogo-358073.png", "/blinkit-logo-png_seeklogo-438944.png", "/Logo_of_Zepto.png", "/BigBasket_Logo.svg.png", "/JioMart-.jpg"]
 
   return (
     <main className="min-h-screen pt-16">
@@ -125,7 +125,7 @@ export default function EcommerceDistributionPage() {
                     key={index}
                     className="bg-gradient-to-r from-blue-50 to-red-50 dark:from-blue-950/30 dark:to-red-950/20 p-4 rounded-lg text-center border border-blue-100 dark:border-blue-900"
                   >
-                    <p className="font-medium">{platform}</p>
+                    <img src={platform} alt="" />
                   </div>
                 ))}
               </div>
@@ -153,6 +153,7 @@ export default function EcommerceDistributionPage() {
           </Link>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

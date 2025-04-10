@@ -3,6 +3,7 @@ import { ArrowRight, Package, CheckCircle, Users, Truck, BarChart2 } from "lucid
 import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
+import Footer from "@/components/footer"
 
 export default function StockistServicesPage() {
   const features = [
@@ -165,6 +166,7 @@ export default function StockistServicesPage() {
           </Link>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

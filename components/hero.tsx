@@ -95,33 +95,6 @@ export default function Hero() {
                 Learn More
               </Button>
             </motion.div>
-
-            <motion.div variants={itemVariants} className="pt-8 grid grid-cols-4 content-center">
-              <div className="flex items-center gap-2 justify-center">
-                <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                  <Database className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                </div>
-                <span className="text-sm">Data-Driven</span>
-              </div>
-              <div className="flex items-center gap-2 justify-center">
-                <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                  <LineChart className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                </div>
-                <span className="text-sm">99.9% Accuracy</span>
-              </div>
-              <div className="flex items-center gap-2 justify-center">
-                <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                  <Zap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                </div>
-                <span className="text-sm">Rapid Delivery</span>
-              </div>
-              <div className="flex items-center gap-2 justify-center">
-                <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                  <Package className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                </div>
-                <span className="text-sm">Smart Logistics</span>
-              </div>
-            </motion.div>
           </motion.div>
 
           <section className="">

@@ -6,6 +6,7 @@ import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
 import { motion } from "framer-motion"
+import Footer from '@/components/footer'
 
 export default function AboutPage() {
   const keyPoints = [
@@ -369,6 +370,7 @@ export default function AboutPage() {
           </Link>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

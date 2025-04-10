@@ -3,7 +3,7 @@ import { ArrowRight, Gift, CheckCircle, Package, ShoppingBag, DollarSign } from 
 import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
-
+import Footer from "@/components/footer"
 export default function KittingBundlingPage() {
   const features = [
     {
@@ -166,6 +166,7 @@ export default function KittingBundlingPage() {
           </Link>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

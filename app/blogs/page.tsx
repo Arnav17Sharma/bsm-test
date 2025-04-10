@@ -5,17 +5,18 @@ import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
 import { Input } from "@/components/ui/input"
+import Footer from "@/components/footer"
 
 export default function BlogsPage() {
   const blogs = [
     {
-      title: "The Future of E-Commerce Distribution in India",
+      title: "The Power of Late Entrants: Lessons for Logistics and Beyond",
       excerpt: "Exploring how technology is reshaping the e-commerce fulfillment landscape in India's diverse market.",
       image: "/placeholder.svg?height=400&width=600",
       date: "May 15, 2023",
       author: "Samarth Jain",
       category: "E-Commerce",
-      slug: "future-ecommerce-distribution-india",
+      slug: "the-power-of-late-entrants-lessons-for-logistics-and-beyond",
       readTime: "5 min read",
     },
     {
@@ -204,6 +205,7 @@ export default function BlogsPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

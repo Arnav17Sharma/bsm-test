@@ -10,6 +10,7 @@ import { Mail, MapPin, Phone, Send, User, MessageSquare, Building } from "lucide
 import { useToast } from "@/hooks/use-toast"
 import GridBackground from "@/components/grid-background"
 import SectionDivider from "@/components/section-divider"
+import Footer from "@/components/footer"
 
 export default function ContactPage() {
   const { toast } = useToast()
@@ -303,6 +304,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }
