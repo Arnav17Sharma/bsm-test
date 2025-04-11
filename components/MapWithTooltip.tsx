@@ -29,8 +29,7 @@ const MapWithTooltip = () => {
             tooltip.style.display = "none";
       
             // Add shadow effect to the hovered state
-            state.style.filter = "drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3))";
-            state.style.animation = "state 2s ease-out forwards";
+            state.style.animation = "stated .5s ease-out forwards";
           });
       
           state.addEventListener("mousemove", (e: MouseEvent) => {

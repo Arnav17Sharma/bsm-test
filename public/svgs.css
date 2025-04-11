@@ -64,14 +64,13 @@
   }
 
 
-  @keyframes state {
+  @keyframes stated {
     0% {
-      opacity: 1;
-      transform: translateZ(2px);
+      filter: drop-shadow(4px 6px rgba(0, 0, 0, 0.3));
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+      filter: drop-shadow(10px 14px rgba(0, 0, 0, 0.8));
+      filter: drop-shadow(-10px -14px rgba(0, 0, 0, 0.8));
     }
   }
   
