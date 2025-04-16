@@ -13,7 +13,7 @@ const MapWithTooltip = () => {
           const grey_states = main_grey_states.querySelectorAll<SVGElement>(".state");
       
           grey_states.forEach((state) => {
-            state.style.fill = "grey";
+            state.style.fill = "#6F9BE6";
           });
         } else {
           console.warn("Element with class '.nope' not found.");
@@ -29,7 +29,8 @@ const MapWithTooltip = () => {
             tooltip.style.display = "none";
       
             // Add shadow effect to the hovered state
-            state.style.animation = "stated .5s ease-out forwards";
+            state.style.filter = "drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3))";
+            state.style.animation = "stated 2s ease-out forwards";
           });
       
           state.addEventListener("mousemove", (e: MouseEvent) => {

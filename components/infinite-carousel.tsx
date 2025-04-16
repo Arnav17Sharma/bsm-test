@@ -73,8 +73,8 @@ export default function InfiniteCarousel({
                     whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.3)" }}
                     className="flex h-[140px] w-[140px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900"
                   >
-                    <img src={item.logo || "/placeholder.svg"} alt={item.name} className="h-12 object-contain mb-2" />
-                    <h3 className="mt-2 text-center font-medium">{item.name}</h3>
+                    <img src={item.logo || "/placeholder.svg"} alt={item.name} className="h-30 object-contain" />
+                    {/* <h3 className="mt-2 text-center font-medium">{item.name}</h3> */}
                   </motion.div>
             {/* <div className="flex flex-col items-center justify-center h-24 w-48 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               

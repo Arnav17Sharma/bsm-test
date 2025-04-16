@@ -97,10 +97,10 @@ export default function Services() {
           <div className="w-4/12 flex flex-col justify-left gap-10">
             <div className="flex h-[100px] w-[340px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900">
                 <div className="h-10 w-10" style={{ backgroundColor: "#2E3092" }}></div>
-              <h3 className="mt-2 text-center font-medium">States we are operational!</h3>
+              <h3 className="mt-2 text-center font-medium">We are operational!</h3>
             </div>
             <div className="flex h-[100px] w-[340px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900">
-                <div className="h-10 w-10" style={{ backgroundColor: "grey" }}></div>
+                <div className="h-10 w-10" style={{ backgroundColor: "#6F9BE6" }}></div>
               <h3 className="mt-2 text-center font-medium">Currently Unavailable!</h3>
             </div>
             <div className="flex h-[auto] w-[340px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900">

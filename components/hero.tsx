@@ -48,7 +48,27 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-primary/5 to-background py-32 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-primary/5 to-background py-32 md:py-32" style={{backgroundImage: "/bghero.jpg?width=auto;height=auto", }}>
+      {/* <section className="relative overflow-hidden bg-gradient-to-b from-primary/5 to-background py-32 md:py-32" style={{ backgroundImage: `url('/bghero.jpg?width=auto&height=auto')` }}></section> */}
+        
+      {/* <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute min-h-full min-w-full object-cover"
+          style={{ filter: "brightness(0.7)" }}
+        >
+          <source
+            src="https://videos.pexels.com/video-files/7687999/7687999-uhd_2560_1440_30fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-white-900/50 via-white-900/40 to-background z-10"></div>
+      </div> */}
+
       <GridBackground className="opacity-30" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background z-10" />
 

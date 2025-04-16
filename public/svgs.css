@@ -64,13 +64,14 @@
   }
 
 
-  @keyframes stated {
+  @keyframes state {
     0% {
-      filter: drop-shadow(4px 6px rgba(0, 0, 0, 0.3));
+      opacity: 0;
+      
     }
     100% {
-      filter: drop-shadow(10px 14px rgba(0, 0, 0, 0.8));
-      filter: drop-shadow(-10px -14px rgba(0, 0, 0, 0.8));
+      opacity: 1;
+      
     }
   }
   
