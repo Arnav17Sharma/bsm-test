@@ -53,6 +53,8 @@ export default function Brands() {
     { name: "Zepto", logo: "/accounts/Logo_of_Zepto.png" },
     { name: "Apollo Pharmacy", logo: "/accounts/apollo.png" },
     { name: "Foxy", logo: "/accounts/foxy_logo.png" },
+    { name: "Blinkit", logo: "/accounts/blinkit.png" },
+    { name: "Swiggy Instamart", logo: "/accounts/instamart.png" },
     { name: "Big Basket", logo: "/accounts/BigBasket_Logo.svg.png" },
     { name: "Purplle", logo: "/accounts/purplle5775.logowik.com.webp" },
     { name: "Tata1MG", logo: "/accounts/2a618394e93bbdf6c4515463df2651af.jpg" },
