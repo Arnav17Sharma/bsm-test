@@ -89,7 +89,7 @@ export default function Hero() {
 
       <div className="absolute top-40 left-10 w-64 h-64 bg-blue-500/20 rounded-full filter blur-[100px] animate-pulse" />
       <div
-        className="absolute bottom-20 right-10 w-72 h-72 bg-blue-400/20 rounded-full filter blur-[100px] animate-pulse"
+        className="absolute bottom-20 right-10 w-72 h-72 bg-blue-400/30 rounded-full filter blur-[100px] animate-pulse"
         style={{ animationDelay: "1s" }}
       />
 
@@ -112,7 +112,7 @@ export default function Hero() {
               </motion.div>
               <motion.h1
   variants={itemVariants}
-  className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-gradient-to-r from-blue-600 to-red-600 group text-blue-600" 
+  className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-gradient-to-r from-blue-600 to-red-600 group text-white" 
   style={{
     textShadow: "0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6)",
   }}

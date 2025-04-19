@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import InfiniteCarousel from "@/components/infinite-carousel"
-
+import CountUp from "./countup"
 export default function Brands() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
@@ -59,8 +59,16 @@ export default function Brands() {
     { name: "Netmeds", logo: "/accounts/images.png" },
   ]
 
+  const metrics = [
+    { label: "Brands Served", value: 120, suffix: "+" },
+    { label: "Active Accounts", value: 350, suffix: "+" },
+    { label: "Monthly Orders", value: 25000, suffix: "+" },
+    { label: "Years of Experience", value: 30, suffix: "+" },
+  ]
+
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gradient-to-b from-blue-50/80 to-white dark:from-slate-900/80 dark:to-slate-950 relative">
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div className="container px-4 md:px-6">
         <motion.div
           ref={ref}
@@ -70,22 +78,54 @@ export default function Brands() {
           className="flex flex-col items-center"
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Trusted by Leading Brands & Accounts</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Trusted by Leading Brands</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl">
               We drive high-performance distribution for industry leaders, ensuring optimized sales and logistics
               execution.
             </p>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="w-full overflow-hidden">
-            <InfiniteCarousel items={brands} speed={25} direction="left" className="py-4" />
+          {/* Metrics Counter Section */}
+          <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mb-16 w-full max-w-4xl mx-auto"
+          >
+            {metrics.map((metric, index) => (
+              <div
+                key={index}
+                className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900 p-6 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              >
+                <CountUp
+                  end={metric.value}
+                  suffix={metric.suffix}
+                  className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 block mb-2"
+                />
+                <span className="text-sm text-muted-foreground">{metric.label}</span>
+              </div>
+            ))}
+          </motion.div>
 
-            {/* <InfiniteCarousel items={[...brands].reverse()} speed={25} direction="right" className="py-4" /> */}
-            <InfiniteCarousel items={accounts} speed={25} direction="right" className="py-4" />
+          {/* Static Brand Tiles */}
+          <motion.div variants={itemVariants} className="w-full mb-12">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+              {brands.map((brand, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-slate-800 rounded-lg shadow-md border border-blue-100 dark:border-blue-900 p-4 flex flex-col items-center justify-center h-32 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                >
+                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="h-20 object-contain mb-2" />
+                  {/* <p className="text-sm font-medium">{brand.name}</p> */}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="w-full overflow-hidden">
+            {/* <InfiniteCarousel items={brands} speed={30} direction="left" className="py-4" />
+            <InfiniteCarousel items={[...brands].reverse()} speed={25} direction="right" className="py-4" /> */}
           </motion.div>
         </motion.div>
       </div>
     </section>
   )
 }
-
