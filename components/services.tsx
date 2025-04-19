@@ -81,7 +81,7 @@ export default function Services() {
     <section id="services" className="py-20 relative">
       <div className="absolute top-40 right-0 w-72 h-72" />
       <div className="absolute bottom-20 left-0 w-80 h-80" />
-
+      
       <div className="flex justify-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
             <Truck className="h-4 w-4 text-red-500" />

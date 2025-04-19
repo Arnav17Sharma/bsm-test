@@ -7,6 +7,7 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { Package2, Menu, X, ChevronDown, ShoppingCart, Store, Zap, Package, BarChart3, Gift } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -89,15 +90,17 @@ export default function Header() {
   ]
 
   return (
-      <header
-        className={cn(
-          "fixed top-0 z-50 w-full transition-all duration-300",
-          isScrolled ? "bg-white-800 dark:bg-transparent backdrop-blur-md shadow-sm" : "bg-transparent",
-        )}
-      >
+    <header
+    className={cn(
+      "fixed top-0 z-50 w-full transition-all duration-300",
+      isScrolled
+        ? "bg-white shadow-lg dark:bg-slate-900/90"
+        : "bg-white/90 shadow-md dark:bg-transparent"
+    )}
+  >
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-        <svg width="1211" height="253" viewBox="0 0 1211 253" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "180px", height: "auto" }}>
+        {/* <svg width="1211" height="253" viewBox="0 0 1211 253" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "180px", height: "auto" }}>
           <g id="LOGOMAIN">
           <g id="logo2">
           <g id="Group">
@@ -201,7 +204,8 @@ export default function Header() {
           <path id="Vector_27" d="M1029.83 154.06L1013.43 163.835C1012.37 164.459 1011.06 164.459 1010.02 163.835L994.507 154.587C993.105 153.751 991.508 153.311 989.877 153.311H876.748C876.582 153.311 876.422 153.265 876.284 153.179L847.108 135.781C846.318 135.306 846.65 134.092 847.572 134.092H995.932C997.912 134.092 999.858 134.63 1001.56 135.643L1029.83 152.504C1030.42 152.858 1030.42 153.711 1029.83 154.06Z" fill="#ED1C23"/>
           </g>
           </g>
-          </svg>
+          </svg> */}
+          <Image src="/Logo-011.png" alt="BSM Logo" width={180} height={80} className="p-8"/>
 
         </Link>
         <nav className="hidden md:flex items-center gap-6" ref={dropdownRef}>
@@ -243,7 +247,7 @@ export default function Header() {
                         <div className="mt-0.5">{subItem.icon}</div>
                         <div>
                           <div className="font-medium">{subItem.name}</div>
-                          <div className="text-xs text-muted-foreground">{subItem.description}</div>
+                          {/* <div className="text-xs text-muted-foreground">{subItem.description}</div> */}
                         </div>
                       </Link>
                     ))}
