@@ -78,11 +78,12 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="py-20 relative">
+    <section id="services" className="py-20 relative"  style={{boxShadow: "0px -15px 10px rgba(0, 0, 0, 0.4)"}}>
       <div className="absolute top-40 right-0 w-72 h-72" />
       <div className="absolute bottom-20 left-0 w-80 h-80" />
-      
-      <div className="flex justify-center">
+      {/* <GridBackground gridSize={80} fadeDirection="bottom"/> */}
+
+      <div className="flex justify-center z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
             <Truck className="h-4 w-4 text-red-500" />
             <span className="text-sm text-red-500">Nationwide Distribution Network</span>
@@ -90,7 +91,7 @@ export default function Services() {
       </div>
 
         <div className="my-12">
-        <div className="flex">
+        <div className="flex" >
           <div className="w-8/12 flex justify-center items-center ">
             <MapWithTooltip/>
           </div>
@@ -172,3 +173,5 @@ export default function Services() {
 }
 
 import MapWithTooltip from "./MapWithTooltip"
+import GridBackground from "./grid-background"
+

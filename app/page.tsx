@@ -57,9 +57,9 @@ export default function Home() {
             </div>
             <SectionDivider />
             <Brands />
-            <SectionDivider />
+            {/* <SectionDivider /> */}
             <About />
-            <SectionDivider />
+            {/* <SectionDivider /> */}
             <Services />
             <SectionDivider />
             <Process />

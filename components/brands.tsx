@@ -4,7 +4,8 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import InfiniteCarousel from "@/components/infinite-carousel"
 import CountUp from "./countup"
-import { AtSign, Pocket } from "lucide-react"
+import { AtSign, Pocket, Route } from "lucide-react"
+import GridBackground from "./grid-background"
 
 export default function Brands() {
   const ref = useRef(null)
@@ -71,8 +72,8 @@ export default function Brands() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-blue-50/80 to-white dark:from-slate-900/80 dark:to-slate-950 relative">
-      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+    <section className="pt-20 bg-gradient-to-b from-blue-50/80 to-white dark:from-slate-900/80 dark:to-slate-950 relative shadow-lg">
+      <div className="absolute inset-0 bg-grid-pattern opacity-30 z-40"  style={{boxShadow: "0px 15px 10px rgba(0, 0, 0, 1)"}}></div>
       <div className="container px-4 md:px-6">
         <motion.div
           ref={ref}
@@ -82,7 +83,7 @@ export default function Brands() {
           className="flex flex-col items-center"
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Trusted by Leading Brands & Accounts</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Trusted by Leading Brands & Channels</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl">
               We drive high-performance distribution for industry leaders, ensuring optimized sales and logistics
               execution.
@@ -110,9 +111,9 @@ export default function Brands() {
           </motion.div>
 
           <div className="flex justify-center mb-5">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
-              <Pocket className="h-4 w-4 text-red-500" />
-              <span className="text-sm text-red-500">Brands</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900">
+              <Pocket className="h-5 w-5 text-blue-500" />
+              <span className="text-lg text-blue-500">Brands</span>
             </div>
         </div>
 
@@ -122,7 +123,7 @@ export default function Brands() {
               {brands.map((brand, index) => (
                 <div
                   key={index}
-                  className="bg-white dark:bg-slate-800 rounded-lg shadow-md border border-blue-100 dark:border-blue-900 p-4 flex flex-col items-center justify-center h-32 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                  className="h-30 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "160px", height: "auto"}}/>
                   {/* <p className="text-sm font-medium">{brand.name}</p> */}
@@ -132,9 +133,9 @@ export default function Brands() {
           </motion.div>
 
           <div className="flex justify-center mb-5">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
-              <AtSign className="h-4 w-4 text-red-500" />
-              <span className="text-sm text-red-500">Accounts</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900">
+              <Route className="h-5 w-5 text-blue-500" />
+              <span className="text-lg text-blue-500">Channels</span>
             </div>
         </div>
         {/* Static Brand Tiles */}
@@ -143,7 +144,7 @@ export default function Brands() {
               {accounts.map((brand, index) => (
                 <div
                   key={index}
-                  className="bg-white dark:bg-slate-800 rounded-lg shadow-md border border-blue-100 dark:border-blue-900 p-4 flex flex-col items-center justify-center h-32 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                                    className="h-30 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "auto"}}/>
                   {/* <p className="text-sm font-medium">{brand.name}</p> */}

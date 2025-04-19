@@ -24,12 +24,12 @@ export default function GridBackground({
     switch (fadeDirection) {
       case "top":
         return {
-          background: "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)",
+          background: "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%)",
           backgroundClip: "content-box",
         }
       case "bottom":
         return {
-          background: "linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)",
+          background: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 50%)",
           backgroundClip: "content-box",
         }
       case "both":
@@ -44,7 +44,7 @@ export default function GridBackground({
   }
 
   return (
-    <div className={cn("absolute inset-0 overflow-hidden", className)}>
+    <div className={cn("absolute inset-0 overflow-hidden z-1", className)}>
       <div
         className="absolute inset-0"
         style={{
