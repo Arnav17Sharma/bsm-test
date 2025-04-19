@@ -4,6 +4,8 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import InfiniteCarousel from "@/components/infinite-carousel"
 import CountUp from "./countup"
+import { AtSign, Pocket } from "lucide-react"
+
 export default function Brands() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
@@ -28,21 +30,21 @@ export default function Brands() {
   }
 
   const brands = [
-    { name: "Sebamed", logo: "/brands/sebamed.png" },
-    { name: "Cetaphil", logo: "/brands/cetaphil.jpg" },
-    { name: "Bioderma", logo: "/brands/bioderma-logo-png_seeklogo-19622.png" },
+    { name: "Sebamed", logo: "/brands/Untitled design.png" },
+    { name: "Cetaphil", logo: "/brands/cetaphil1.png" },
+    { name: "Bioderma", logo: "/brands/bioderma-logo-png_seeklogo-196221.png" },
     { name: "Mothercare", logo: "/brands/mothercare-logo-png_seeklogo-288761.png" },
     { name: "Mustela", logo: "/brands/mustela-logo-png_seeklogo-321456.png" },
-    { name: "Indus Valley", logo: "/brands/logo1_69d92ab8-7d35-4ff9-9322-d439be2dca55.webp" },
-    { name: "Mother Sparsh", logo: "/brands/new_logo_e3f4d18e-a9c0-43d9-b91a-5a1c154b1b93_1.webp" },
-    { name: "Trisa", logo: "/brands/trisa-logo-png_seeklogo-213651.png" },
-    { name: "Pigeon", logo: "/brands/pigeon6167.logowik.com.webp" },
-    { name: "Nuby", logo: "/brands/610794ebb92262134eef8e0bf0b54ea3.webp" },
-    { name: "Chicco", logo: "/brands/Chicco-Logo.jpg" },
-    { name: "Philips Avents", logo: "/brands/philips-avent-logo-png_seeklogo-108451.png" },
+    { name: "Indus Valley", logo: "/brands/indus_valley.png" },
+    { name: "Mother Sparsh", logo: "/brands/mother_sparsh_new.png" },
+    { name: "Trisa", logo: "/brands/trisa-logo-png_seeklogo-2136511.png" },
+    { name: "Pigeon", logo: "/brands/pigeon6167.logowik.com1.png" },
+    { name: "Nuby", logo: "/brands/nuby.png" },
+    { name: "Chicco", logo: "/brands/Chicco-Logo1.png" },
+    { name: "Philips Avents", logo: "/brands/philips-avent-logo-png_seeklogo-1084511.png" },
     { name: "Lavazza", logo: "/brands/lavazza-logo.svg" },
-    { name: "Schwabe", logo: "/brands/images.jpeg" },
-    { name: "Baby Forest", logo: "/brands/babyforest-logo_256x192_99e9aafe-50e2-4814-bab1-1d0d70467836.webp" },
+    { name: "Schwabe", logo: "/brands/schwabe.png" },
+    { name: "Baby Forest", logo: "/brands/babyforest-logo_256x192_99e9aafe-50e2-4814-bab1-1d0d70467836.png" },
   ]
 
   const accounts = [
@@ -78,13 +80,13 @@ export default function Brands() {
           className="flex flex-col items-center"
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Trusted by Leading Brands</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Trusted by Leading Brands & Accounts</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl">
               We drive high-performance distribution for industry leaders, ensuring optimized sales and logistics
               execution.
             </p>
           </motion.div>
-
+          
           {/* Metrics Counter Section */}
           <motion.div
             variants={itemVariants}
@@ -105,6 +107,13 @@ export default function Brands() {
             ))}
           </motion.div>
 
+          <div className="flex justify-center mb-5">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
+              <Pocket className="h-4 w-4 text-red-500" />
+              <span className="text-sm text-red-500">Brands</span>
+            </div>
+        </div>
+
           {/* Static Brand Tiles */}
           <motion.div variants={itemVariants} className="w-full mb-12">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
@@ -113,7 +122,28 @@ export default function Brands() {
                   key={index}
                   className="bg-white dark:bg-slate-800 rounded-lg shadow-md border border-blue-100 dark:border-blue-900 p-4 flex flex-col items-center justify-center h-32 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
-                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="h-20 object-contain mb-2" />
+                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "160px", height: "auto"}}/>
+                  {/* <p className="text-sm font-medium">{brand.name}</p> */}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <div className="flex justify-center mb-5">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
+              <AtSign className="h-4 w-4 text-red-500" />
+              <span className="text-sm text-red-500">Accounts</span>
+            </div>
+        </div>
+        {/* Static Brand Tiles */}
+        <motion.div variants={itemVariants} className="w-full mb-12">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+              {accounts.map((brand, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-slate-800 rounded-lg shadow-md border border-blue-100 dark:border-blue-900 p-4 flex flex-col items-center justify-center h-32 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                >
+                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "auto"}}/>
                   {/* <p className="text-sm font-medium">{brand.name}</p> */}
                 </div>
               ))}

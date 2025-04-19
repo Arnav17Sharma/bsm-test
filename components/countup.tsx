@@ -1,52 +1,51 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from "react"
-import { useInView } from "framer-motion"
+import { useState, useEffect, useRef } from "react";
+import { useInView } from "framer-motion";
 
 interface CountUpProps {
-  end: number
-  duration?: number
-  prefix?: string
-  suffix?: string
-  className?: string
+  end: number;
+  duration?: number;
+  prefix?: string;
+  suffix?: string;
+  className?: string;
 }
 
-export default function CountUp({ end, duration = 2000, prefix = "", suffix = "", className = "" }: CountUpProps) {
-  const [count, setCount] = useState(0)
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
-  const [hasAnimated, setHasAnimated] = useState(false)
+export default function CountUp({
+  end,
+  duration = 2000,
+  prefix = "",
+  suffix = "",
+  className = "",
+}: CountUpProps) {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     if (isInView && !hasAnimated) {
-      setHasAnimated(true)
+      setHasAnimated(true);
 
-      let startTime: number | null = null
-      let animationFrame: number
+      let startTime: number | null = null;
 
       const animateCount = (timestamp: number) => {
-        if (!startTime) startTime = timestamp // Initialize startTime on the first frame
-        const progress = Math.min((timestamp - startTime) / duration, 1)
-        const currentCount = Math.floor(progress * end)
+        if (!startTime) startTime = timestamp; // Initialize startTime on the first frame
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        const currentCount = Math.floor(progress * end);
 
-        setCount(currentCount)
+        setCount(currentCount);
 
         if (progress < 1) {
-          animationFrame = requestAnimationFrame(animateCount)
+          requestAnimationFrame(animateCount);
         } else {
-          setCount(end) // Ensure the final value is set
+          setCount(end); // Ensure the final value is set
         }
-      }
+      };
 
-      animationFrame = requestAnimationFrame(animateCount)
-
-      return () => {
-        if (animationFrame) {
-          cancelAnimationFrame(animationFrame)
-        }
-      }
+      requestAnimationFrame(animateCount);
     }
-  }, [isInView, end, duration, hasAnimated])
+  }, [isInView, end, duration, hasAnimated]);
 
   return (
     <span ref={ref} className={className}>
@@ -54,5 +53,5 @@ export default function CountUp({ end, duration = 2000, prefix = "", suffix = ""
       {count.toLocaleString()}
       {suffix}
     </span>
-  )
+  );
 }
