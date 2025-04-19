@@ -82,8 +82,7 @@ export default function Hero() {
             style={{ filter: "brightness(0.7)" }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-b from-white-900/50 via-white-900/40 to-background z-10" />
-      </div>
+        </div>
 
       <GridBackground className="opacity-30" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background z-10" />
@@ -113,9 +112,9 @@ export default function Hero() {
               </motion.div>
               <motion.h1
   variants={itemVariants}
-  className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-gradient-to-r from-blue-600 to-red-600 group text-blue-500 hover:text-blue-600" 
+  className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-gradient-to-r from-blue-600 to-red-600 group text-blue-600" 
   style={{
-    textShadow: "0 0 10px rgba(40, 34, 34, 0.8), 0 0 20px rgba(40, 34, 34, 0.6)",
+    textShadow: "0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6)",
   }}
 >
   Tech-Enabled Distribution
