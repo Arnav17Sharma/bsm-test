@@ -68,8 +68,7 @@ export default function Brands() {
     { label: "Years of Experience", value: 30, suffix: "+" },
     { label: "Brands Served", value: 65, suffix: "+" },
     { label: "Active Accounts", value: 32, suffix: "+" },
-     // Millions
-    { label: "Inventory Accuracy Commitment", value: 99.5, suffix: "%" },
+    { label: "Inventory Accuracy", value: 99.5, suffix: "%" },
     { label: "on-Time TAT Achievement", value: 98, suffix: "%" },
     { label: "Annual Units Processed", value: 10, suffix: "Mn +" },
 
@@ -96,28 +95,30 @@ export default function Brands() {
           
           {/* Metrics Counter Section */}
           <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 mb-16 w-full max-w-4xl mx-auto"
-          >
-            {metrics.map((metric, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900 p-6 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center h-40"
-              >
-                <CountUp
-                  end={metric.value}
-                  suffix={metric.suffix}
-                  className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 block mb-2"
-                />
-                <span className="text-sm text-muted-foreground">{metric.label}</span>
-              </div>
-            ))}
-          </motion.div>
+  variants={itemVariants}
+  className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-5 mb-16 w-full max-w-auto mx-auto"
+>
+  {metrics.map((metric, index) => (
+    <div
+      key={index}
+      className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center h-40"
+    >
+      <CountUp
+        end={metric.value}
+        suffix={metric.suffix}
+        className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 block mb-2"
+      />
+      <span className="text-md text-muted-foreground mt-3 font-bold mx-2 whitespace-normal h-10">
+        {metric.label}
+      </span>
+    </div>
+  ))}
+</motion.div>
 
           <div className="flex justify-center mb-5">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900">
-              <Pocket className="h-5 w-5 text-blue-500" />
-              <span className="text-lg text-blue-500">Brands</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
+              <Pocket className="h-5 w-5 text-red-500" />
+              <span className="text-lg text-red-500">Brands</span>
             </div>
         </div>
 
@@ -137,9 +138,9 @@ export default function Brands() {
           </motion.div>
 
           <div className="flex justify-center mb-5">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900">
-              <Route className="h-5 w-5 text-blue-500" />
-              <span className="text-lg text-blue-500">Channels</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
+              <Route className="h-5 w-5 text-red-500" />
+              <span className="text-lg text-red-500">Channels</span>
             </div>
         </div>
         {/* Static Brand Tiles */}
