@@ -52,7 +52,7 @@ export default function InfiniteCarousel2({
           className="flex h-[200px] w-[180px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900"
         >
           <BarChart3 className="h-10 w-10 text-blue-500" />
-          <h3 className="mt-2 text-center font-medium">Smart <br />Demand <br /> Planning</h3>
+          <h3 className="mt-2 text-center font-large">Smart <br />Demand <br /> Planning</h3>
         </motion.div>
       </div>
       <div className="px-8 py-4">
@@ -61,7 +61,7 @@ export default function InfiniteCarousel2({
           className="flex h-[200px] w-[180px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900"
         >
           <Route className="h-10 w-10 text-blue-500" />
-          <h3 className="mt-2 text-center font-medium">Flexible <br /> Order <br />Routing</h3>
+          <h3 className="mt-2 text-center font-large">Flexible <br /> Order <br />Routing</h3>
         </motion.div>
       </div>
       <div className="px-8 py-4">
@@ -70,7 +70,7 @@ export default function InfiniteCarousel2({
           className="flex h-[200px] w-[180px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900"
         >
           <Package className="h-10 w-10 text-blue-500" />
-          <h3 className="mt-2 text-center font-medium">Live <br />Inventory <br /> Sync</h3>
+          <h3 className="mt-2 text-center font-large">Live <br />Inventory <br /> Sync</h3>
         </motion.div>
       </div>
       <div className="px-8 py-4">
@@ -79,7 +79,7 @@ export default function InfiniteCarousel2({
           className="flex h-[200px] w-[180px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900"
         >
           <ChartLine className="h-10 w-10 text-blue-500" />
-          <h3 className="mt-2 text-center font-medium">Reliable <br />Fullfillment <br /> (99.9% SLA)</h3>
+          <h3 className="mt-2 text-center font-large">Reliable <br />Fullfillment <br /> (99.9% SLA)</h3>
         </motion.div>
       </div>
       <div className="px-8 py-4">
@@ -88,7 +88,7 @@ export default function InfiniteCarousel2({
           className="flex h-[200px] w-[180px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900"
         >
           <Database className="h-10 w-10 text-blue-500" />
-          <h3 className="mt-2 text-center font-medium">Data-backed <br />Operations</h3>
+          <h3 className="mt-2 text-center font-large">Data-backed <br />Operations</h3>
         </motion.div>
       </div>
     </div>
