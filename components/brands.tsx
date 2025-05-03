@@ -65,10 +65,14 @@ export default function Brands() {
   ]
 
   const metrics = [
-    { label: "Brands Served", value: 120, suffix: "+" },
-    { label: "Active Accounts", value: 350, suffix: "+" },
-    { label: "Monthly Orders", value: 25000, suffix: "+" },
     { label: "Years of Experience", value: 30, suffix: "+" },
+    { label: "Brands Served", value: 65, suffix: "+" },
+    { label: "Active Accounts", value: 32, suffix: "+" },
+     // Millions
+    { label: "Inventory Accuracy Commitment", value: 99.5, suffix: "%" },
+    { label: "on-Time TAT Achievement", value: 98, suffix: "%" },
+    { label: "Annual Units Processed", value: 10, suffix: "Mn +" },
+
   ]
 
   return (
@@ -93,12 +97,12 @@ export default function Brands() {
           {/* Metrics Counter Section */}
           <motion.div
             variants={itemVariants}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mb-16 w-full max-w-4xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 mb-16 w-full max-w-4xl mx-auto"
           >
             {metrics.map((metric, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900 p-6 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900 p-6 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center h-40"
               >
                 <CountUp
                   end={metric.value}
