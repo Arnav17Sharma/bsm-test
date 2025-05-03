@@ -76,7 +76,7 @@ export default function Brands() {
 
   return (
     <section className="pt-20 bg-gradient-to-b from-blue-50/80 to-white dark:from-slate-900/80 dark:to-slate-950 relative shadow-lg">
-      <div className="absolute inset-0 bg-grid-pattern opacity-30 z-40"  style={{boxShadow: "0px 15px 10px rgba(0, 0, 0, 1)"}}></div>
+      <div className="absolute inset-0 bg-grid-pattern opacity-30 z-40"  style={{boxShadow: "0px 15px 10px rgba(0, 0, 0, 1)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
       <div className="container px-4 md:px-6">
         <motion.div
           ref={ref}
@@ -95,25 +95,25 @@ export default function Brands() {
           
           {/* Metrics Counter Section */}
           <motion.div
-  variants={itemVariants}
-  className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-5 mb-16 w-full max-w-auto mx-auto"
->
-  {metrics.map((metric, index) => (
-    <div
-      key={index}
-      className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center h-40"
-    >
-      <CountUp
-        end={metric.value}
-        suffix={metric.suffix}
-        className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 block mb-2"
-      />
-      <span className="text-md text-muted-foreground mt-3 font-bold mx-2 whitespace-normal">
-        {metric.label}
-      </span>
-    </div>
-  ))}
-</motion.div>
+            variants={itemVariants}
+            className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-5 mb-16 w-full max-w-auto mx-auto"
+          >
+            {metrics.map((metric, index) => (
+              <div
+                key={index}
+                className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center h-40"
+              >
+                <CountUp
+                  end={metric.value}
+                  suffix={metric.suffix}
+                  className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 block mb-2"
+                />
+                <span className="text-md text-muted-foreground mt-3 font-bold mx-2 whitespace-normal">
+                  {metric.label}
+                </span>
+              </div>
+            ))}
+          </motion.div>
 
           <div className="flex justify-center mb-5">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">

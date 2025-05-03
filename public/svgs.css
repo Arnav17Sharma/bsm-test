@@ -1,3 +1,8 @@
+body {
+  zoom: 80%
+ }
+ 
+
 /* General animation for all elements */
 @keyframes fadeInUp {
     0% {
@@ -64,14 +69,12 @@
   }
 
 
-  @keyframes state {
+  @keyframes stated {
     0% {
-      opacity: 0;
-      
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
     }
     100% {
-      opacity: 1;
-      
+      filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
     }
   }
   

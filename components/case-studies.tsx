@@ -6,6 +6,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Button } from "@/components/ui/button"
 import { ArrowRight, BarChart2, TrendingUp } from "lucide-react"
 import MouseGlowEffect from "@/components/mouse-glow-effect"
+import Link from "next/link"
 
 export default function CaseStudies() {
   const ref = useRef(null)
@@ -120,6 +121,14 @@ export default function CaseStudies() {
               </motion.div>
             ))}
           </motion.div>
+          <div className="mt-12 flex justify-center">
+          <Link href="/blogs">
+            <Button className="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700">
+              View All Case-Studies
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
         </MouseGlowEffect>
       </div>
     </section>
