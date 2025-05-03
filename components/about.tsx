@@ -65,9 +65,9 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-20 relative z-45" style={{backgroundColor: "#4384F3"}}>
-      <div className="absolute top-40 right-0 w-72 h-72 bg-blue-500/10 rounded-full filter blur-[100px]" />
-      <div className="absolute bottom-20 left-0 w-80 h-80 bg-blue-400/10 rounded-full filter blur-[100px]" />
+    <section id="about" className="py-20 relative z-45" style={{backgroundColor: "#1B1465"}}>
+      <div className="absolute top-40 right-0 w-72 h-72 rounded-full filter blur-[100px]" />
+      <div className="absolute bottom-20 left-0 w-80 h-80 rounded-full filter blur-[100px]" />
       <div className="container px-4 md:px-6 relative z-10">
         {/* const ref = useRef(null);
         const isInView = useInView(ref); */}
@@ -80,7 +80,7 @@ export default function About() {
             isInView ? "start-css-animation" : ""
           }`}>
             <motion.div variants={itemVariants} className="space-y-4">
-            <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-sm text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-2">
+            <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-md text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-2">
               <Users className="mr-1 h-3.5 w-3.5" />
               About BSM
             </div>

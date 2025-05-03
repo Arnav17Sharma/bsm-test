@@ -108,7 +108,7 @@ export default function Brands() {
         suffix={metric.suffix}
         className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 block mb-2"
       />
-      <span className="text-md text-muted-foreground mt-3 font-bold mx-2 whitespace-normal h-10">
+      <span className="text-md text-muted-foreground mt-3 font-bold mx-2 whitespace-normal">
         {metric.label}
       </span>
     </div>
@@ -118,19 +118,19 @@ export default function Brands() {
           <div className="flex justify-center mb-5">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
               <Pocket className="h-5 w-5 text-red-500" />
-              <span className="text-lg text-red-500">Brands</span>
+              <span className="text-2xl text-red-500">Brands</span>
             </div>
         </div>
 
           {/* Static Brand Tiles */}
           <motion.div variants={itemVariants} className="w-full mb-12">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-5 gap-5 md:gap-6">
               {brands.map((brand, index) => (
                 <div
                   key={index}
-                  className="h-30 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                  className="h-30 w-50 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
-                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "160px", height: "auto"}}/>
+                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "120px"}}/>
                   {/* <p className="text-sm font-medium">{brand.name}</p> */}
                 </div>
               ))}
@@ -140,18 +140,18 @@ export default function Brands() {
           <div className="flex justify-center mb-5">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900">
               <Route className="h-5 w-5 text-red-500" />
-              <span className="text-lg text-red-500">Channels</span>
+              <span className="text-2xl text-red-500">Channels</span>
             </div>
         </div>
         {/* Static Brand Tiles */}
         <motion.div variants={itemVariants} className="w-full mb-12">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-5 gap-5 md:gap-6">
               {accounts.map((brand, index) => (
                 <div
                   key={index}
                                     className="h-30 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
-                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "auto"}}/>
+                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "120px"}}/>
                   {/* <p className="text-sm font-medium">{brand.name}</p> */}
                 </div>
               ))}
