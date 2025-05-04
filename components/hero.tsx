@@ -48,9 +48,9 @@ export default function Hero() {
   }
 
   const videos = [
-    "/1.mp4",
     "/4477613-hd_1920_1080_30fps.mp4",
     "/5738747-hd_1920_1080_30fps.mp4",
+    "/1.mp4"
   ]
 
   const [currentVideo, setCurrentVideo] = useState(0)
