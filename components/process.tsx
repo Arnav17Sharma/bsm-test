@@ -142,7 +142,7 @@ export default function Process() {
           <circle cx="130" cy="50" r="4" fill="#ED1C24" />
         </svg>
       ),
-      src: "/133782181_10191041 1.svg?width=200height=160"
+      src: "/133782181_10191041.svg?width=200height=160"
     },
     {
       icon: <Warehouse className="h-10 w-10 text-blue-500" />,
@@ -170,7 +170,7 @@ export default function Process() {
           <circle cx="122.5" cy="75" r="2.5" fill="#3B82F6" />
         </svg>
       ),
-      src: "/17714354_2101.i201.030_franchise_franchising_isometric_icons 1.svg?width=200height=160"
+      src: "/Clip path group.svg?width=200height=160"
     },
     {
       icon: <PackageCheck className="h-10 w-10 text-blue-500" />,
@@ -198,7 +198,7 @@ export default function Process() {
           <path d="M40 120H160" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
         </svg>
       ),
-      src: "/6850213_28128 1.svg?width=200height=160"
+      src: "/40467513_8841404 1.svg?width=200height=160"
     },
     {
       icon: <TrendingUp className="h-10 w-10 text-blue-500" />,
@@ -235,7 +235,7 @@ export default function Process() {
           <path d="M40 40L40 110" stroke="#3B82F6" strokeOpacity="0.3" strokeWidth="1" />
         </svg>
       ),
-      src: "/28159344_webanalyst_4 1.svg?width=200height=160"
+      src: "/33756670_8104936.svg?width=200height=160"
     },
   ]
 
