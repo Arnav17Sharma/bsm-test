@@ -70,7 +70,7 @@ export default function Home() {
             <SectionDivider />
             <div className="relative">
               <div className="absolute inset-0 overflow-hidden">
-                <GridBackground className="opacity-30" fadeDirection="bottom" />
+                <GridBackground className="opacity-30" />
               </div>
               <Cta />
             </div>

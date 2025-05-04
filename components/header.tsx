@@ -216,7 +216,7 @@ export default function Header() {
                   onClick={() => toggleDropdown(item.name)}
                   onMouseEnter={() => setActiveDropdown(item.name)}
                   className={cn(
-                    "flex items-center gap-1 text-md font-medium transition-colors hover:text-blue-500",
+                    "flex items-center gap-1 text- font-medium transition-colors hover:text-blue-500",
                     activeDropdown === item.name ? "text-blue-500" : "",
                   )}
                 >
@@ -226,7 +226,7 @@ export default function Header() {
                   />
                 </button>
               ) : (
-                <Link href={item.href} className="text-md font-medium transition-colors hover:text-blue-500">
+                <Link href={item.href} className="text- font-medium transition-colors hover:text-blue-500">
                   {item.name}
                 </Link>
               )}
@@ -291,7 +291,7 @@ export default function Header() {
                     <>
                       <button
                         onClick={() => toggleDropdown(item.name)}
-                        className="flex items-center justify-between w-full text-md font-medium py-2 transition-colors hover:text-blue-500"
+                        className="flex items-center justify-between w-full text- font-medium py-2 transition-colors hover:text-blue-500"
                       >
                         {item.name}
                         <ChevronDown
@@ -307,7 +307,7 @@ export default function Header() {
                             <Link
                               key={subItem.name}
                               href={subItem.href}
-                              className="flex items-center gap-2 py-2 text-md text-muted-foreground hover:text-blue-500"
+                              className="flex items-center gap-2 py-2 text- text-muted-foreground hover:text-blue-500"
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
                               {subItem.icon}
@@ -321,7 +321,7 @@ export default function Header() {
                     <Link
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-md font-medium py-2 transition-colors hover:text-blue-500 block"
+                      className="text- font-medium py-2 transition-colors hover:text-blue-500 block"
                     >
                       {item.name}
                     </Link>
