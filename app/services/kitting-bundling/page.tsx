@@ -97,7 +97,7 @@ export default function KittingBundlingPage() {
             <div className="overflow-hidden rounded-xl">
                 <div className="absolute inset-0 z-10"></div>
                 <img
-                  src="/19472297_6106297%201.svg"
+                  src="/19472297_6106297 1.svg"
                   alt="E-Commerce Fulfillment"
                   className="object-cover w-full h-full p-10"
                 />

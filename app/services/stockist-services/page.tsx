@@ -98,7 +98,7 @@ export default function StockistServicesPage() {
             <div className="overflow-hidden rounded-xl">
                 <div className="absolute inset-0 z-10"></div>
                 <img
-                  src="/9464171_36140 1.svg"
+                  src="/82648727_9950252.svg"
                   alt="E-Commerce Fulfillment"
                   className="object-cover w-full h-full"
                 />

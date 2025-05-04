@@ -88,7 +88,7 @@ export default function EcommerceDistributionPage() {
               <div className="overflow-hidden rounded-xl">
                 <div className="absolute inset-0 z-10"></div>
                 <img
-                  src="/E-Commerce%20Distribution%20&%20Fulfillment.svg"
+                  src="/E-Commerce%20Distribution%20&%20Fulfillment%201.svg"
                   alt="E-Commerce Fulfillment"
                   className="object-cover w-full h-full"
                 />

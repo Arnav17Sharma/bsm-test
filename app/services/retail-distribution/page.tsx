@@ -98,7 +98,7 @@ export default function RetailDistributionPage() {
             <div className="overflow-hidden rounded-xl">
                 <div className="absolute inset-0 z-10"></div>
                 <img
-                  src="/17714354_2101.i201.030_franchise_franchising_isometric_icons%201.svg"
+                  src="/7709397_3721088.svg"
                   alt="E-Commerce Fulfillment"
                   className="object-cover w-full h-full"
                 />

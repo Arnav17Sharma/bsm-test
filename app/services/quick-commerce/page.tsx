@@ -98,7 +98,7 @@ export default function QuickCommercePage() {
             <div className="overflow-hidden rounded-xl">
                 <div className="absolute inset-0 z-10"></div>
                 <img
-                  src="/g8.svg"
+                  src="/40467513_8841404 1.svg"
                   alt="E-Commerce Fulfillment"
                   className="object-cover w-full h-full"
                 />

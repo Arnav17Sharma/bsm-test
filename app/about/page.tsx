@@ -109,7 +109,7 @@ export default function AboutPage() {
     <main className="min-h-screen pt-16">
       <section className="py-20 bg-muted/30 relative">
         <div className="absolute inset-0 overflow-hidden">
-          <GridBackground className="opacity-30" fadeDirection="top" />
+          <GridBackground className="opacity-30" />
         </div>
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center justify-center text-center mb-12">
@@ -318,7 +318,7 @@ export default function AboutPage() {
 
       <section className="py-20 bg-background relative">
         <div className="absolute inset-0 overflow-hidden">
-          <GridBackground className="opacity-20" fadeDirection="bottom" />
+          <GridBackground className="opacity-20" />
         </div>
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center justify-center text-center mb-12">
