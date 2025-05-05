@@ -34,7 +34,7 @@ export default function BlogsSection() {
     {
       title: "The Future of E-Commerce Distribution in India",
       excerpt: "Exploring how technology is reshaping the e-commerce fulfillment landscape in India's diverse market.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/Navigating Supply Chain Disruptions in 2023.png",
       date: "May 15, 2023",
       author: "Samarth Jain",
       category: "E-Commerce",
@@ -43,7 +43,7 @@ export default function BlogsSection() {
     {
       title: "Quick Commerce: Challenges and Opportunities",
       excerpt: "How brands can leverage the 10-minute delivery revolution while maintaining operational efficiency.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/Quick Commerce Challenges and Opportunities.png",
       date: "April 22, 2023",
       author: "Rahul Sharma",
       category: "Quick Commerce",
@@ -57,7 +57,36 @@ export default function BlogsSection() {
       author: "Priya Patel",
       category: "Inventory",
       slug: "data-driven-inventory-management",
+    }
+  ]
+  const blogs2 = [
+    {
+      title: "The Future of E-Commerce Distribution in India",
+      excerpt: "Exploring how technology is reshaping the e-commerce fulfillment landscape in India's diverse market.",
+      image: "/Navigating Supply Chain Disruptions in 2023.png?height=400&width=600",
+      date: "May 15, 2023",
+      author: "Samarth Jain",
+      category: "E-Commerce",
+      slug: "future-ecommerce-distribution-india",
     },
+    {
+      title: "Quick Commerce: Challenges and Opportunities",
+      excerpt: "How brands can leverage the 10-minute delivery revolution while maintaining operational efficiency.",
+      image: "/Quick Commerce Challenges and Opportunities.png?height=400&width=600",
+      date: "April 22, 2023",
+      author: "Rahul Sharma",
+      category: "Quick Commerce",
+      slug: "quick-commerce-challenges-opportunities",
+    },
+    {
+      title: "Data-Driven Inventory Management Strategies",
+      excerpt: "Leveraging analytics to optimize stock levels and improve cash flow across distribution networks.",
+      image: "/placeholder.svg?height=400&width=600",
+      date: "March 10, 2023",
+      author: "Priya Patel",
+      category: "Inventory",
+      slug: "data-driven-inventory-management",
+    }
   ]
 
   return (

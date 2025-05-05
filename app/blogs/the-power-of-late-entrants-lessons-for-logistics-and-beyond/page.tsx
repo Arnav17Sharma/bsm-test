@@ -8,7 +8,7 @@ export default function BlogDetailPage() {
   const blog = {
     title: "The Future of E-Commerce Distribution in India",
     excerpt: "Exploring how technology is reshaping the e-commerce fulfillment landscape in India's diverse market.",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "Blogs_Covers/Blogs_Covers/The Rise of Omnichannel Distribution.png",
     date: "May 15, 2023",
     author: "Samarth Jain",
     category: "E-Commerce",

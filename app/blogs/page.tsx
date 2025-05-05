@@ -12,7 +12,7 @@ export default function BlogsPage() {
     {
       title: "The Power of Late Entrants: Lessons for Logistics and Beyond",
       excerpt: "Exploring how technology is reshaping the e-commerce fulfillment landscape in India's diverse market.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/power.jpg",
       date: "May 15, 2023",
       author: "Samarth Jain",
       category: "E-Commerce",
@@ -20,9 +20,9 @@ export default function BlogsPage() {
       readTime: "5 min read",
     },
     {
-      title: "Quick Commerce: Challenges and Opportunities",
+      title: "Kirana Stores Aren't Going Anywhere (Yet)",
       excerpt: "How brands can leverage the 10-minute delivery revolution while maintaining operational efficiency.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/Kirana Stores aren't going anywhere.png",
       date: "April 22, 2023",
       author: "Rahul Sharma",
       category: "Quick Commerce",
@@ -30,9 +30,9 @@ export default function BlogsPage() {
       readTime: "7 min read",
     },
     {
-      title: "Data-Driven Inventory Management Strategies",
+      title: "Dark Stores vs General Stores",
       excerpt: "Leveraging analytics to optimize stock levels and improve cash flow across distribution networks.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/Dark Stores vs General Stores.jpg",
       date: "March 10, 2023",
       author: "Priya Patel",
       category: "Inventory",
@@ -40,9 +40,9 @@ export default function BlogsPage() {
       readTime: "6 min read",
     },
     {
-      title: "The Rise of Omnichannel Distribution",
+      title: "Why D2C Brands Are Going Offline",
       excerpt: "How integrated distribution strategies are becoming essential for brand success in the digital age.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/D2C Brands Going offline.png",
       date: "February 28, 2023",
       author: "Samarth Jain",
       category: "Strategy",
@@ -50,10 +50,10 @@ export default function BlogsPage() {
       readTime: "8 min read",
     },
     {
-      title: "Sustainable Logistics: The Future of Distribution",
+      title: "The Rise of Assisted Commerce in India",
       excerpt:
         "Exploring eco-friendly practices in distribution that reduce carbon footprint while maintaining efficiency.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/future_ecomm.jpg",
       date: "January 15, 2023",
       author: "Rahul Sharma",
       category: "Sustainability",
@@ -61,9 +61,9 @@ export default function BlogsPage() {
       readTime: "5 min read",
     },
     {
-      title: "Navigating Supply Chain Disruptions in 2023",
+      title: "Beyond the Box",
       excerpt: "Strategies for maintaining distribution continuity in the face of global supply chain challenges.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/Beyong the Box.png",
       date: "December 10, 2022",
       author: "Priya Patel",
       category: "Supply Chain",
@@ -145,7 +145,7 @@ export default function BlogsPage() {
                   <img
                     src={blog.image || "/placeholder.svg"}
                     alt={blog.title}
-                    className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+                    className="object-cover object-top w-full h-full"
                   />
                   <div className="absolute top-4 left-4 bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md z-20">
                     {blog.category}
