@@ -32,32 +32,35 @@ export default function BlogsSection() {
 
   const blogs = [
     {
-      title: "The Future of E-Commerce Distribution in India",
+      title: "The Power of Late Entrants: Lessons for Logistics and Beyond",
       excerpt: "Exploring how technology is reshaping the e-commerce fulfillment landscape in India's diverse market.",
-      image: "Blogs_Covers/Blogs_Covers/Navigating Supply Chain Disruptions in 2023.png",
+      image: "Blogs_Covers/Blogs_Covers/power.jpg",
       date: "May 15, 2023",
       author: "Samarth Jain",
       category: "E-Commerce",
-      slug: "future-ecommerce-distribution-india",
+      slug: "the-power-of-late-entrants-lessons-for-logistics-and-beyond",
+      readTime: "5 min read",
     },
     {
-      title: "Quick Commerce: Challenges and Opportunities",
+      title: "Kirana Stores Aren't Going Anywhere (Yet)",
       excerpt: "How brands can leverage the 10-minute delivery revolution while maintaining operational efficiency.",
-      image: "Blogs_Covers/Blogs_Covers/Quick Commerce Challenges and Opportunities.png",
+      image: "Blogs_Covers/Blogs_Covers/Kirana Stores aren't going anywhere.png",
       date: "April 22, 2023",
       author: "Rahul Sharma",
       category: "Quick Commerce",
       slug: "quick-commerce-challenges-opportunities",
+      readTime: "7 min read",
     },
     {
-      title: "Data-Driven Inventory Management Strategies",
+      title: "Dark Stores vs General Stores",
       excerpt: "Leveraging analytics to optimize stock levels and improve cash flow across distribution networks.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "Blogs_Covers/Blogs_Covers/Dark Stores vs General Stores.jpg",
       date: "March 10, 2023",
       author: "Priya Patel",
       category: "Inventory",
       slug: "data-driven-inventory-management",
-    }
+      readTime: "6 min read",
+    },
   ]
   const blogs2 = [
     {
@@ -124,7 +127,7 @@ export default function BlogsSection() {
                   <img
                     src={blog.image || "/placeholder.svg"}
                     alt={blog.title}
-                    className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+                    className="object-cover object-top w-full h-full transition-transform duration-500 hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md z-20">
                     {blog.category}
