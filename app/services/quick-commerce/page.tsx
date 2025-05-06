@@ -48,6 +48,22 @@ export default function QuickCommercePage() {
     "Amazon Fresh",
   ]
 
+  const accounts = [
+    { name: "Firstcry", logo: "/accounts/firstcry-logo-png_seeklogo-386678.png" },
+    { name: "Amazon", logo: "/accounts/amazon.svg" },
+    { name: "Zepto", logo: "/accounts/Logo_of_Zepto.png" },
+    { name: "Apollo Pharmacy", logo: "/accounts/apollo.png" },
+    { name: "Foxy", logo: "/accounts/foxy_logo.png" },
+    { name: "Blinkit", logo: "/accounts/blinkit.png" },
+    { name: "Swiggy Instamart", logo: "/accounts/instamart.png" },
+    { name: "Big Basket", logo: "/accounts/BigBasket_Logo.svg.png" },
+    { name: "Purplle", logo: "/accounts/purplle5775.logowik.com.webp" },
+    { name: "Tata1MG", logo: "/accounts/2a618394e93bbdf6c4515463df2651af.jpg" },
+    { name: "Pharmeasy", logo: "/accounts/pharmeasy-logo-png_seeklogo-471933.png" },
+    { name: "Truemeds", logo: "/accounts/48848.png" },
+    { name: "Netmeds", logo: "/accounts/images.png" },
+  ]
+
   return (
     <main className="min-h-screen pt-16">
       <section className="py-20 bg-muted/30 relative">
@@ -132,7 +148,7 @@ export default function QuickCommercePage() {
 
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">Supported Platforms</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {platforms.map((platform, index) => (
                   <div
                     key={index}
@@ -141,7 +157,18 @@ export default function QuickCommercePage() {
                     <p className="font-medium">{platform}</p>
                   </div>
                 ))}
-              </div>
+              </div> */}
+              <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-5 gap-5 md:gap-6">
+                {accounts.map((brand, index) => (
+                  <div
+                    key={index}
+                    className="h-20 w-50 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                  >
+                    <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "120px"}}/>
+                    {/* <p className="text-sm font-medium">{brand.name}</p> */}
+                  </div>
+                ))}
+                </div>
             </div>
           </div>
         </div>

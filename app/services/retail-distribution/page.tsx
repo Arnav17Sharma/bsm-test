@@ -4,6 +4,7 @@ import Link from "next/link"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
 import Footer from "@/components/footer"
+import CountUp from "@/components/countup";
 
 export default function RetailDistributionPage() {
   const features = [
@@ -46,6 +47,16 @@ export default function RetailDistributionPage() {
     "Apollo Pharmacy",
     "Health & Glow",
     "Wellness Forever",
+  ]
+
+  const metrics = [
+    { label: "Number of Outlets Serviced", value: 30, suffix: "+" },
+    { label: "Universe coverate", value: 65, suffix: "+" },
+    { label: "Number of MT Chains covered", value: 32, suffix: "+" },
+    { label: "Category Availability", value: 99.5, suffix: "%" },
+    { label: "On time delivery Rate", value: 98, suffix: "%" },
+    { label: "Beat Compliance", value: 10, suffix: "Mn +" },
+
   ]
 
   return (
@@ -95,7 +106,7 @@ export default function RetailDistributionPage() {
             </div>
 
             <div className="relative">
-            <div className="overflow-hidden rounded-xl">
+              <div className="overflow-hidden rounded-xl">
                 <div className="absolute inset-0 z-10"></div>
                 <img
                   src="/7709397_3721088.svg"
@@ -104,7 +115,28 @@ export default function RetailDistributionPage() {
                 />
               </div>
             </div>
+
+            
           </div>
+          <div
+              className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-5 mb-16 w-full max-w-auto mx-auto"
+            >
+              {metrics.map((metric, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center h-40"
+                >
+                  <CountUp
+                    end={metric.value}
+                    suffix={metric.suffix}
+                    className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 block mb-2"
+                  />
+                  <span className="text-md text-muted-foreground mt-3 font-bold mx-2 whitespace-normal">
+                    {metric.label}
+                  </span>
+                </div>
+              ))}
+            </div>
         </div>
       </section>
 
