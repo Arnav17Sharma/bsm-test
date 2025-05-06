@@ -10,7 +10,6 @@ import { Mail, MapPin, Phone, Send, User, MessageSquare, Building } from "lucide
 import { useToast } from "@/hooks/use-toast"
 import GridBackground from "@/components/grid-background"
 import SectionDivider from "@/components/section-divider"
-import Footer from "@/components/footer"
 
 export default function ContactPage() {
   const { toast } = useToast()
@@ -73,7 +72,7 @@ export default function ContactPage() {
     <main className="min-h-screen pt-16">
       <section className="py-20 bg-muted/30 relative">
         <div className="absolute inset-0 overflow-hidden">
-          <GridBackground className="opacity-30" fadeDirection="top" />
+          <GridBackground className="opacity-30" />
         </div>
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center justify-center text-center mb-12">
@@ -126,12 +125,8 @@ export default function ContactPage() {
                   <p className="text-muted-foreground">Sunday: Closed</p>
                 </div>
               </div>
-              <div className="aspect-video overflow-hidden rounded-xl mt-8">
-                <img
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="BSM Office Location"
-                  className="object-cover w-full h-full"
-                />
+              <div className="aspect-video overflow-hidden rounded-xl mt-8 border border-blue-100 dark:border-blue-900 shadow-sm">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.796760631012!2d77.13443997554269!3d28.63585277566295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d1300ed4bed%3A0xa30e0bf694a5fda1!2sB.S%20Marketing%20Co.%20(BSM%20India)!5e0!3m2!1sen!2sin!4v1746561453718!5m2!1sen!2sin" width="600" height="450"></iframe>
               </div>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-blue-100 dark:border-blue-900">
@@ -252,7 +247,7 @@ export default function ContactPage() {
 
       <section className="py-20 bg-background relative">
         <div className="absolute inset-0 overflow-hidden">
-          <GridBackground className="opacity-20" fadeDirection="bottom" />
+          <GridBackground className="opacity-20" />
         </div>
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center justify-center text-center mb-12">
@@ -304,8 +299,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      <Footer />
     </main>
   )
 }
-
