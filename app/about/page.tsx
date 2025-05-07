@@ -80,6 +80,18 @@ export default function AboutPage() {
       icon: <MapPin className="h-5 w-5 text-blue-500" />,
     },
     {
+      year: "2010",
+      title: "Diversifying into Global Foods",
+      description: "We ventured into premium food distribution, bringing international names like Real Thai, Nongshim, Hellmann’s, Lavazza Coffee, and Raavi Sauces to Indian retail shelves. This marked our foray into lifestyle-led categories and global retail partnerships.",
+      icon: <ShoppingCart className="h-5 w-5 text-blue-500" />,
+    },
+    {
+      year: "2002–2015",
+      title: "India’s Baby Care Launchpad",
+      description: "Over more than a decade, BSM emerged as the go-to distribution partner for every major baby care brand entering India. From Mustela, Buds Buddy, and Nuby to Philips Avent, Farlin, Mamaearth, and Baby Forest, we played a foundational role in launching and scaling these brands in India’s traditional trade. Our unmatched reach, retail intelligence, and execution made BSM synonymous with baby care.",
+      icon: <ShoppingCart className="h-5 w-5 text-blue-500" />,
+    },
+    {
       year: "2015",
       title: "Transitioning for Tomorrow",
       description: "As India’s retail landscape evolved, so did we. BSM began modernizing its systems, adopting early tech-led tools and expanding into organized retail and general trade logistics.",

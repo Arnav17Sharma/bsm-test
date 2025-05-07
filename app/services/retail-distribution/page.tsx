@@ -80,7 +80,7 @@ export default function RetailDistributionPage() {
           </div>
 
           <div
-              className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-5 mb-16 w-full max-w-auto mx-auto"
+              className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-5 w-full max-w-auto mx-auto"
             >
               {metrics.map((metric, index) => (
                 <div
