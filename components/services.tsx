@@ -16,7 +16,7 @@ export default function Services() {
   const metrics = [
     { label: "Warehouses", value: 3, suffix: "" },
     { label: "Cities Covered", value: 50, suffix: "+" },
-    { label: "Average TAT", value: 24, suffix: "hr" },
+    { label: "Average TAT", value: 48, suffix: "hr" },
   ]
 
   const services = [

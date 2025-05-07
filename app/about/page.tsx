@@ -62,45 +62,45 @@ export default function AboutPage() {
 
   const timeline = [
     {
-      year: "1992",
-      title: "Company Founded",
-      description: "BSM was established as a traditional distribution company in Delhi.",
+      year: "1993",
+      title: "The Foundation",
+      description: "BSM was born in South Delhi, starting as a traditional distribution partner for legacy brands like Perfetti and Godrej. Built on trust, discipline, and strong market understanding, our roots run deep in retail logistics.",
       icon: <Building className="h-5 w-5 text-blue-500" />,
     },
     {
-      year: "2001",
-      title: "Expansion to Modern Trade",
-      description: "Expanded operations to include modern retail chains and supermarkets.",
+      year: "2000s",
+      title: "Building the Base",
+      description: "We steadily expanded our portfolio to 15+ brands, servicing leading FMCG brands and building a reputation for operational consistency and local market dominance.",
       icon: <Store className="h-5 w-5 text-blue-500" />,
     },
     {
-      year: "2008",
-      title: "Regional Expansion",
-      description: "Established regional offices in Mumbai and Bangalore.",
+      year: "2002",
+      title: "Pioneer Partnerships",
+      description: "We became one of the first distribution partners in India for global brands like Pigeon and 3M, playing a key role in launching and establishing them in the Indian market. These early bets defined our DNA — bold, brand-focused, and execution-obsessed.",
       icon: <MapPin className="h-5 w-5 text-blue-500" />,
     },
     {
       year: "2015",
-      title: "E-Commerce Integration",
-      description: "Launched specialized e-commerce fulfillment services.",
+      title: "Transitioning for Tomorrow",
+      description: "As India’s retail landscape evolved, so did we. BSM began modernizing its systems, adopting early tech-led tools and expanding into organized retail and general trade logistics.",
       icon: <ShoppingCart className="h-5 w-5 text-blue-500" />,
     },
     {
-      year: "2018",
-      title: "Technology Transformation",
-      description: "Implemented AI-driven inventory management and forecasting systems.",
+      year: "2017",
+      title: "The eCommerce Pivot",
+      description: "Recognizing the shift in consumer behavior, BSM transitioned into eCommerce fulfillment — servicing fast-growing brands across marketplaces and D2C channels. We embraced automation, real-time tracking, and agile warehousing.",
       icon: <Cpu className="h-5 w-5 text-blue-500" />,
     },
     {
-      year: "2020",
-      title: "Quick Commerce Solutions",
-      description: "Pioneered specialized fulfillment for 10-minute delivery platforms.",
+      year: "2023",
+      title: "Quick Commerce Ready",
+      description: "With platforms like Blinkit and Zepto changing the game, BSM adapted to faster TATs and micro-fulfillment, becoming a trusted partner for Q-commerce operations across North India.",
       icon: <Zap className="h-5 w-5 text-blue-500" />,
     },
     {
-      year: "2023",
-      title: "Nationwide Network Completion",
-      description: "Achieved comprehensive coverage across all major Indian markets.",
+      year: "2025",
+      title: "National Expansion Begins",
+      description: "BSM launches its Mumbai facility — marking our official entry into West India. With robust infrastructure and a tech-first approach, we’re building a truly pan-India eCommerce distribution network.",
       icon: <Globe className="h-5 w-5 text-blue-500" />,
     },
   ]
@@ -224,7 +224,9 @@ export default function AboutPage() {
                     <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
                       {event.title}
                     </h3>
+                    <div className={`${index % 2 === 0 ? "float-right" : "float-left"}`} style={{width: "40%"}}>
                     <p className="text-muted-foreground transition-colors duration-300">{event.description}</p>
+                    </div>
                   </motion.div>
 
                   <motion.div
@@ -245,7 +247,7 @@ export default function AboutPage() {
                   </motion.div>
 
                   <motion.div
-                    className="flex-1 text-center md:hidden"
+                    className="flex-1 text-center md:hidden w-50"
                     whileHover={{ y: -5 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -258,7 +260,9 @@ export default function AboutPage() {
                     <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
                       {event.title}
                     </h3>
-                    <p className="text-muted-foreground transition-colors duration-300">{event.description}</p>
+                    <p className="text-muted-foreground transition-colors duration-300">
+                      {event.description}
+                    </p>
                   </motion.div>
                 </motion.div>
               ))}

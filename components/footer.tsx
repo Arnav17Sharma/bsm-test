@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Package2, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 import GridBackground from "@/components/grid-background"
-
+import Image from "next/image"
 export default function Footer() {
   return (
     <footer className="relative bg-muted/40 border-t">
@@ -11,10 +11,9 @@ export default function Footer() {
       <div className="container relative z-10 px-4 md:px-6 py-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Package2 className="h-6 w-6 text-blue-500" />
-              <span className="font-bold text-xl">BSM</span>
-            </Link>
+          <Link href="/" className="flex items-center gap-2">
+            <Image src="/Logo-011.png" alt="BSM Logo" width={100} height={40} />
+s          </Link>
             <p className="text-sm text-muted-foreground">
               Next-generation, tech-enabled distribution and fulfillment company, optimizing omnichannel commerce for
               brands.
