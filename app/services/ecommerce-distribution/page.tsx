@@ -7,23 +7,33 @@ import Footer from "@/components/footer"
 export default function EcommerceDistributionPage() {
   const features = [
     {
-      title: "Marketplace Account Management",
-      description: "End-to-end management of your brand presence across Amazon, Flipkart, and other marketplaces.",
+      title: "Pan-India Single Distribution Partner",
+      description: "We operate warehouses across the country and offer comprehensive supply chain and distribution services, making us your all-in-one logistics partner. This means you enjoy the simplicity of dealing with a single provider while delivering top-tier service to your customers.",
       icon: <ShoppingCart className="h-5 w-5 text-blue-500" />,
     },
     {
-      title: "Inventory Forecasting",
-      description: "AI-driven demand prediction to optimize stock levels and prevent stockouts.",
+      title: "Dedicated E-Commerce Distribution",
+      description: "With our deep e-commerce expertise and extensive warehousing infrastructure, we tailor our distribution solutions to meet your order processing needs—whether they come from your own website or an online marketplace.",
       icon: <BarChart2 className="h-5 w-5 text-blue-500" />,
     },
     {
-      title: "Order Processing & Fulfillment",
-      description: "Rapid order processing with 99.9% accuracy and same-day dispatch capabilities.",
+      title: "Automated Reporting",
+      description: "We prioritize smart use of technology, which is why our ERP systems are equipped with automated, scheduled reporting. Additionally, you have the flexibility to generate real-time reports whenever needed.",
       icon: <Package className="h-5 w-5 text-blue-500" />,
     },
     {
-      title: "Returns Management",
-      description: "Streamlined returns processing with quality inspection and inventory reintegration.",
+      title: "Inventory Planning",
+      description: "E-commerce is a fast-paced marketplace with constantly shifting demand patterns, requiring agile inventory management. Our planning approach is shaped by hands-on experience working with leading FMCG brands, ensuring accuracy and responsiveness.",
+      icon: <Truck className="h-5 w-5 text-blue-500" />,
+    },
+    {
+      title: "Key Insights for Sales Enhancement",
+      description: "E-commerce provides valuable insights into consumer purchasing behavior, allowing us to identify key patterns and anomalies. These insights help us craft more effective sales strategies tailored to your target audience.",
+      icon: <Truck className="h-5 w-5 text-blue-500" />,
+    },
+    {
+      title: "Dedicated Account Manager",
+      description: "While our systems are advanced and efficiently designed, we strongly believe in the importance of human interaction. That’s why we assign a dedicated account manager to provide personalized support and ensure smooth collaboration.",
       icon: <Truck className="h-5 w-5 text-blue-500" />,
     },
   ]
@@ -84,7 +94,7 @@ export default function EcommerceDistributionPage() {
 
               <div className="space-y-4">
                 <h2 className="text-2xl font-bold">Key Features</h2>
-                <div className="grid gap-4 sm:grid-cols-2">
+                <div className="grid gap-3 sm:grid-cols-2">
                   {features.map((feature, index) => (
                     <div key={index} className="bg-card p-4 rounded-lg border border-blue-100 dark:border-blue-900">
                       <div className="flex items-center gap-3 mb-2">

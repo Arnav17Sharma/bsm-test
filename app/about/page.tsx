@@ -7,8 +7,95 @@ import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
 import { motion } from "framer-motion"
 import Footer from '@/components/footer'
+import { useState, useRef, useEffect } from "react"
 
 export default function AboutPage() {
+  // Internal MagnetLines component
+  const MagnetLines = ({
+    rows = 9,
+    columns = 9,
+    containerSize = "80vmin",
+    lineColor = "#efefef",
+    lineWidth = "1vmin",
+    lineHeight = "6vmin",
+    baseAngle = -10,
+    className = "",
+    style = {},
+  }) => {
+    const containerRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+      const container = containerRef.current
+      if (!container) return
+
+      const items = container.querySelectorAll("span")
+
+      const onPointerMove = (pointer: { x: number; y: number }) => {
+        items.forEach((item) => {
+          const rect = item.getBoundingClientRect()
+          const centerX = rect.x + rect.width / 2
+          const centerY = rect.y + rect.height / 2
+
+          const b = pointer.x - centerX
+          const a = pointer.y - centerY
+          const c = Math.sqrt(a * a + b * b) || 1
+          const r = ((Math.acos(b / c) * 180) / Math.PI) * (pointer.y > centerY ? 1 : -1)
+
+          item.style.setProperty("--rotate", `${r}deg`)
+        })
+      }
+
+      const handlePointerMove = (e: PointerEvent) => {
+        onPointerMove({ x: e.clientX, y: e.clientY })
+      }
+
+      window.addEventListener("pointermove", handlePointerMove)
+
+      if (items.length) {
+        const middleIndex = Math.floor(items.length / 2)
+        const rect = items[middleIndex].getBoundingClientRect()
+        onPointerMove({ x: rect.x, y: rect.y })
+      }
+
+      return () => {
+        window.removeEventListener("pointermove", handlePointerMove)
+      }
+    }, [])
+
+    const total = rows * columns
+    const spans = Array.from({ length: total }, (_, i) => (
+      <span
+        key={i}
+        className="block origin-center"
+        style={
+          {
+            backgroundColor: lineColor,
+            width: lineWidth,
+            height: lineHeight,
+            "--rotate": `${baseAngle}deg`,
+            transform: "rotate(var(--rotate))",
+            willChange: "transform",
+          } as React.CSSProperties
+        }
+      />
+    ))
+
+    return (
+      <div
+        ref={containerRef}
+        className={`grid place-items-center ${className}`}
+        style={{
+          gridTemplateColumns: `repeat(${columns}, 1fr)`,
+          gridTemplateRows: `repeat(${rows}, 1fr)`,
+          width: containerSize,
+          height: containerSize,
+          ...style,
+        }}
+      >
+        {spans}
+      </div>
+    )
+  }
   const keyPoints = [
     {
       icon: <Clock className="h-5 w-5 text-blue-500" />,
@@ -117,6 +204,8 @@ export default function AboutPage() {
     },
   ]
 
+  
+
   return (
     <main className="min-h-screen pt-16">
       <section className="py-20 bg-muted/30 relative">
@@ -170,6 +259,17 @@ export default function AboutPage() {
       <SectionDivider />
 
       <section className="py-20 bg-background relative">
+      <div className="absolute inset-0 opacity-30">
+        <MagnetLines
+          containerSize="100%"
+          lineColor="#6366f1"
+          lineWidth="0.5vmin"
+          lineHeight="4vmin"
+          rows={12}
+          columns={12}
+          baseAngle={-45}
+        />
+      </div>
         <div className="absolute inset-0 overflow-hidden">
           <GridBackground className="opacity-20" />
         </div>

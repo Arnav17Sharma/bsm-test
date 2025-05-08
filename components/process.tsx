@@ -283,7 +283,7 @@ export default function Process() {
 
       <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center text-center mb-16">
-          <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm text-blue-600 dark:border-blue-800 dark:bg-blue-950/30 dark:text-blue-400 mb-4">
+          <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xl text-blue-600 dark:border-blue-800 dark:bg-blue-950/30 dark:text-blue-400 mb-4">
             <Lightbulb className="mr-1 h-3.5 w-3.5" />
             Our Approach
           </div>

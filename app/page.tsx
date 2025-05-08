@@ -14,6 +14,7 @@ import Footer from "@/components/footer"
 import SectionDivider from "@/components/section-divider"
 import GridBackground from "@/components/grid-background"
 import IntroAnimation from "@/components/intro-animation"
+import Testimonials from "@/components/testimonial"
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true)
@@ -63,11 +64,12 @@ export default function Home() {
             <Services />
             <SectionDivider />
             <Process />
-            <SectionDivider />
-            <CaseStudies />
+            {/* <SectionDivider /> */}
+            {/* <CaseStudies /> */}
+            
             <SectionDivider />
             <BlogsSection />
-            <SectionDivider />
+            <Testimonials />
             <div className="relative">
               <div className="absolute inset-0 overflow-hidden">
                 <GridBackground className="opacity-30" />

@@ -145,7 +145,7 @@ export default function Services() {
       <div className="container px-4 md:px-6 relative z-10 mt-10">
         
         <div className="flex flex-col items-center justify-center text-center z-0">
-          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-sm text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
+          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xl text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
             <TrendingUp className="mr-1 h-3.5 w-3.5" />
             Discover Our Offerings
           </div>

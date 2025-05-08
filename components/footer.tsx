@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="space-y-4">
           <Link href="/" className="flex items-center gap-2">
             <Image src="/Logo-011.png" alt="BSM Logo" width={100} height={40} />
-s          </Link>
+          </Link>
             <p className="text-sm text-muted-foreground">
               Next-generation, tech-enabled distribution and fulfillment company, optimizing omnichannel commerce for
               brands.

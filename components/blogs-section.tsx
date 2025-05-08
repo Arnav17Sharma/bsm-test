@@ -97,12 +97,13 @@ export default function BlogsSection() {
       id="blogs"
       className="py-20 bg-gradient-to-b from-white to-blue-50/50 dark:from-slate-950 dark:to-blue-950/20 relative"
     >
+      <div className="absolute inset-0 bg-grid-pattern opacity-30 z-40"  style={{boxShadow: "0px 15px 10px rgba(0, 0, 0, 1)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
       <div className="absolute top-0 left-0 w-full h-40" />
       <div className="absolute bottom-0 right-0 w-72 h-72" />
 
       <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center text-center mb-12">
-          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-sm text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
+          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xl text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
             <FileText className="mr-1 h-3.5 w-3.5" />
             Latest Insights
           </div>
