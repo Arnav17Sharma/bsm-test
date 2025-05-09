@@ -38,17 +38,23 @@ export default function RetailDistributionPage() {
     "Real-time sales tracking and performance analytics",
   ]
 
-  const retailers = [
-    "Reliance Retail",
-    "DMart",
-    "Big Bazaar",
-    "Spencer's",
-    "More Supermarkets",
-    "Apollo Pharmacy",
-    "Health & Glow",
-    "Wellness Forever",
-  ]
-
+  const accounts = [
+    { name: "WHSmith", logo: "/retailers/WHSmith-Logo.wine.png" },
+    { name: "Foodhall", logo: "/retailers/Logo-Foodhall.png" },
+    { name: "Apollo Hospitals", logo: "/retailers/apollo.png" },
+    { name: "LOTS Wholesale Solutions", logo: "/retailers/LogoLandscapeNoborder.png" },
+    { name: "JioMart", logo: "/retailers/JioMart-.jpg" },
+    { name: "Modern Bazaar", logo: "/retailers/handibazaar-client-31 (1).png" },
+    { name: "BIG BAZAAR", logo: "/retailers/Big_Bazaar_Logo.svg.png" },
+    { name: "Le Marche", logo: "/retailers/handibazaar-client-31.png" },
+    { name: "Reliance SMART", logo: "/retailers/Reliance-Smart-Bazaar-Airia-Mall-Gurugram-Delhi.png" },
+    { name: "VISHAL Mega Mart", logo: "/retailers/VMM-1.png" },
+    { name: "Spencer’s", logo: "/retailers/SPENCERS.NS_BIG-9b99c75c.png" },
+    { name: "Easyday", logo: "/retailers/Easyday_logo.png" },
+    { name: "More (Hamesha Extra)", logo: "/retailers/53.png" },
+    { name: "Fortis", logo: "/retailers/fortis-hospitals-logo-png_seeklogo-214982.png" },
+    { name: "All Class A/ B / C Outlets", logo: "/retailers/Group 32.png" },
+  ]  
   const metrics = [
     { label: "Number of Outlets Serviced", value: 1500, suffix: "+" },
     { label: "Universe coverate", value: 95, suffix: "%" },
@@ -167,14 +173,15 @@ export default function RetailDistributionPage() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">Partner Retailers</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {retailers.map((retailer, index) => (
-                  <div
-                    key={index}
-                    className="bg-gradient-to-r from-blue-50 to-red-50 dark:from-blue-950/30 dark:to-red-950/20 p-4 rounded-lg text-center border border-blue-100 dark:border-blue-900"
-                  >
-                    <p className="font-medium">{retailer}</p>
-                  </div>
-                ))}
+                {accounts.map((brand, index) => (
+                    <div
+                      key={index}
+                      className="h-20 w-50 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                    >
+                      <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "120px"}}/>
+                      {/* <p className="text-sm font-medium">{brand.name}</p> */}
+                    </div>
+                  ))}
               </div>
             </div>
           </div>

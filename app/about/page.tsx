@@ -128,21 +128,21 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Samarth Jain",
-      position: "Founder & CEO",
-      bio: "30+ years of experience in distribution and logistics across India.",
+      name: "Mukesh Khandelwal",
+      position: "Founder & Managing Partner",
+      bio: "With over three decades of hands-on experience in distribution and supply chain management, Mukesh Kumar is the driving force behind BSM. A seasoned entrepreneur with a dual degree in commerce, he founded BSM with a vision to streamline logistics for modern retail. Under his leadership, BSM has grown into a trusted name in the industry, known for its reliability, scale, and operational excellence.",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Rahul Sharma",
-      position: "Chief Operations Officer",
-      bio: "Expert in supply chain optimization and warehouse management.",
+      name: "Samarth Khandelwal",
+      position: "Director, E-Commerce",
+      bio: "Samarth leads the e-commerce vertical at BSM, bringing a unique blend of investment acumen and operational insight. He began his career in private equity, working on high-impact deals before channeling his passion into building scalable supply chain systems. An MBA from MDI Gurgaon, Samarth plays a pivotal role in driving BSM’s digital transformation and pan-India growth across online retail channels.",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Priya Patel",
-      position: "Head of Technology",
-      bio: "Leading BSM's digital transformation and data analytics initiatives.",
+      name: "Sarthak Khandelwal",
+      position: "Director, Distribution Management",
+      bio: "Sarthak brings deep experience in FMCG sales, having worked with leading companies like Godrej. An MBA from IMT Ghaziabad, he is instrumental in building and scaling BSM’s distribution network. His strong commercial acumen and ground-level understanding of retail operations drive execution strength across the organization.",
       image: "/placeholder.svg?height=300&width=300",
     },
   ]
