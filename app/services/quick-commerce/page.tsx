@@ -49,19 +49,12 @@ export default function QuickCommercePage() {
   ]
 
   const accounts = [
-    { name: "Firstcry", logo: "/accounts/firstcry-logo-png_seeklogo-386678.png" },
     { name: "Amazon", logo: "/accounts/amazon.svg" },
     { name: "Zepto", logo: "/accounts/Logo_of_Zepto.png" },
-    { name: "Apollo Pharmacy", logo: "/accounts/apollo.png" },
-    { name: "Foxy", logo: "/accounts/foxy_logo.png" },
     { name: "Blinkit", logo: "/accounts/blinkit.png" },
     { name: "Swiggy Instamart", logo: "/accounts/instamart.png" },
     { name: "Big Basket", logo: "/accounts/BigBasket_Logo.svg.png" },
-    { name: "Purplle", logo: "/accounts/purplle5775.logowik.com.webp" },
-    { name: "Tata1MG", logo: "/accounts/2a618394e93bbdf6c4515463df2651af.jpg" },
-    { name: "Pharmeasy", logo: "/accounts/pharmeasy-logo-png_seeklogo-471933.png" },
-    { name: "Truemeds", logo: "/accounts/48848.png" },
-    { name: "Netmeds", logo: "/accounts/images.png" },
+    { name: "Flipkart", logo: "/Flipkart-logo.jpg" },
   ]
 
   return (

@@ -336,7 +336,7 @@ export default function AboutPage() {
                     <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
                       {event.title}
                     </h3>
-                    <div className={`${index % 2 === 0 ? "float-right" : "float-left"}`} style={{width: "40%"}}>
+                    <div className={`${index % 2 === 0 ? "float-right pl-20" : "float-left pr-20"}`} style={{width: "40%"}}>
                     <p className="text-muted-foreground transition-colors duration-300">{event.description}</p>
                     </div>
                   </motion.div>

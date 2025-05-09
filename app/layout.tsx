@@ -23,6 +23,7 @@ export default function RootLayout({
         <script src="/mapdata.js"></script>
         <script src="/countrymap.js"></script>
         <link rel="stylesheet" href="/svgs.css" />
+        <link rel="icon" href="/window_icon.png" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
