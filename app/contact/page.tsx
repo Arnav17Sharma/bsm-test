@@ -126,7 +126,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="aspect-video overflow-hidden rounded-xl mt-8 border border-blue-100 dark:border-blue-900 shadow-sm">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.796760631012!2d77.13443997554269!3d28.63585277566295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d1300ed4bed%3A0xa30e0bf694a5fda1!2sB.S%20Marketing%20Co.%20(BSM%20India)!5e0!3m2!1sen!2sin!4v1746561453718!5m2!1sen!2sin" width="600" height="450"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.796760631012!2d77.13443997554269!3d28.63585277566295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d1300ed4bed%3A0xa30e0bf694a5fda1!2sB.S%20Marketing%20Co.%20(BSM%20India)!5e0!3m2!1sen!2sin!4v1746561453718!5m2!1sen!2sin" style={{width: "-webkit-fill-available",height: "-webkit-fill-available"}}></iframe>
               </div>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-blue-100 dark:border-blue-900">
