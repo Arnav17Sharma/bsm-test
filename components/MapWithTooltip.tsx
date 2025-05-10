@@ -64,7 +64,9 @@ const MapWithTooltip = () => {
 ></div>
 
       {/* SVG Map */}
-      <svg width="502" height="583" viewBox="0 0 602 683" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+      <svg 
+      className="w-[350px] h-[383px] lg:w-[502px] lg:h-[583px]"
+      width="402" height="483" viewBox="0 0 602 683" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <g id="Group 28">
 <g id="features">
 <g id="yupp">

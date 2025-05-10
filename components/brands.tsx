@@ -124,14 +124,14 @@ export default function Brands() {
 
           {/* Static Brand Tiles */}
           <motion.div variants={itemVariants} className="w-full mb-12">
-            <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-5 gap-5 md:gap-6">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-5 md:gap-6">
               {brands.map((brand, index) => (
                 <div
                   key={index}
-                  className="h-[60px] sm:h-[120px] w-50 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform duration-300 hover:shadow-xl hover:-translate-y-1"
+                  className="h-auto sm:h-[120px] w-50 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform duration-300 hover:shadow-xl hover:-translate-y-1"
 
                 >
-                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "120px"}}/>
+                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "auto"}}/>
                   {/* <p className="text-sm font-medium">{brand.name}</p> */}
                 </div>
               ))}
@@ -146,13 +146,13 @@ export default function Brands() {
         </div>
         {/* Static Brand Tiles */}
         <motion.div variants={itemVariants} className="w-full mb-12">
-            <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-5 gap-5 md:gap-6">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-5 md:gap-6">
               {accounts.map((brand, index) => (
                 <div
                   key={index}
-                  className="h-[60px] sm:h-[120px] w-50 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform duration-300 hover:shadow-xl hover:-translate-y-1"
+                className="h-[100px] sm:h-[120px] w-50 p-4 bg-white dark:bg-slate-800 flex flex-col items-center justify-center rounded-xl dark:bg-slate-900 shadow-lg transition-all border border-blue-100 dark:border-blue-900 transform duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
-                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "120px"}}/>
+                  <img src={brand.logo || "/placeholder.svg"} alt={brand.name} className="object-contain mb-2" style={{width: "140px", height: "auto"}}/>
                   {/* <p className="text-sm font-medium">{brand.name}</p> */}
                 </div>
               ))}

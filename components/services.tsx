@@ -85,7 +85,7 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="px-20 py-20 relative"  style={{boxShadow: "0px -15px 10px rgba(0, 0, 0, 0.4)"}}>
+    <section id="services" className="px-10 py-20 relative"  style={{boxShadow: "0px -15px 10px rgba(0, 0, 0, 0.4)"}}>
       <div className="absolute top-40 right-0 w-72 h-72" />
       <div className="absolute bottom-20 left-0 w-80 h-80" />
       {/* <GridBackground gridSize={80} fadeDirection="bottom"/> */}
@@ -98,7 +98,7 @@ export default function Services() {
       </div>
       <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Experience Our Services</h2> */}
       <div className="flex flex-col items-center justify-center text-center z-0">
-          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xl text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
+          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-md lg:text-xl text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
             <Truck className="mr-1 h-3.5 w-3.5" />
             Nationwide Distribution Network
           </div>
@@ -171,16 +171,16 @@ export default function Services() {
                     className={`h-auto lg:h-[500px] overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-blue-100 dark:border-blue-900`}
                   >
                     <CardHeader className="pb-2 pt-5">
-                      <div className="h-[260px] mb-2 flex items-center justify-center">
+                      <div className="h-[260px] flex items-center justify-center">
                           {service.icon}
                       </div>
-                      <div className="h-[20px]"></div>
+                      {/* <div className="h-[20px]"></div> */}
                       <CardTitle className="h-[40px] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 ">
                         {service.title}
                       </CardTitle>
                     </CardHeader>
                     
-                    <CardContent className="lg:mt-4 h-[80px] ">
+                    <CardContent className="lg:mt-4">
                       <CardDescription className="text-base">{service.description}</CardDescription>
 
                       <div className="mt-4 py-4 border-t border-blue-100 dark:border-blue-900/50 flex items-center gap-2">

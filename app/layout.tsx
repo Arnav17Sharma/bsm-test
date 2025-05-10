@@ -25,7 +25,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/svgs.css" />
         <link rel="icon" href="/window_icon.png" type="image/x-icon" />
       </head>
-      <body className={inter.className}>
+      <body className="">
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           {children}

@@ -67,7 +67,7 @@ export default function Cta() {
           className="flex flex-col items-center"
         >
           <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-block rounded-lg bg-red-500/10 px-3 py-1 text-xl text-red-500 mb-4">
+            <div className="inline-block rounded-lg bg-red-500/10 px-3 py-1 text-md lg:text-xl text-red-500 mb-4">
               Get Started
             </div>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">

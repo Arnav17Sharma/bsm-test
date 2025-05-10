@@ -330,7 +330,7 @@ export default function AboutPage() {
           >
             {/* Text Content */}
             <motion.div
-              className={`flex-1 text-center ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}
+              className={`flex-1 text-center ${index % 2 === 0 ? "lg:text-right" : "lg:text-left"}`}
               whileHover={{ y: -5 }}
               transition={{ duration: 0.2 }}
             >
@@ -345,7 +345,7 @@ export default function AboutPage() {
                 {event.title}
               </h3>
 
-              <div className={`md:w-[40%] w-full mx-auto md:mx-0 px-4 md:px-0  ${index % 2 === 0 ? "md:float-right md:pl-20 text-right" : "md:float-left md:pr-20 text-left"}`}>
+              <div className={`md:w-[40%] w-full mx-auto md:mx-0 px-4 md:px-0 text-center ${index % 2 === 0 ? "lg:float-right lg:pl-20 text-right" : "lg:float-left lg:pr-20 text-left"}`}>
                 <p className="text-sm sm:text-base text-muted-foreground transition-colors duration-300">
                   {event.description}
                 </p>

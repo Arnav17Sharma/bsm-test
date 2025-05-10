@@ -45,7 +45,7 @@ export default function InfiniteCarousel2({
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
     >
-      <div className="grid grid-cols-3 lg:grid-cols-5 lg:gap-6 place-items-center">
+      <div className="grid grid-cols-3 gp-5 lg:grid-cols-5 lg:gap-6 place-items-center">
       <div className="px-8 py-4">
         <motion.div
           whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.3)" }}

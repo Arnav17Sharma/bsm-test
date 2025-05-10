@@ -85,7 +85,7 @@ export default function Testimonials({ className }: TestimonialsProps) {
     <section className={cn("py-10 bg-muted/30 relative overflow-hidden", className)} style={{backgroundColor: "#1B1465"}}>
       <div className="container px-4 md:px-6 mb-10">
       <div className="flex flex-col items-center justify-center text-center mb-12">
-          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xl text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
+          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-md lg:text-xl text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
             <Users className="mr-1 h-3.5 w-3.5" />
             Testimonials
           </div>
