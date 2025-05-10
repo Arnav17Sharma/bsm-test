@@ -115,7 +115,7 @@ export default function RetailDistributionPage() {
 
               <div className="space-y-4">
                 <h2 className="text-2xl font-bold">Key Features</h2>
-                <div className="grid gap-4 sm:grid-cols-2">
+                <div className="grid gap-4 grid-cols-2">
                   {features.map((feature, index) => (
                     <div key={index} className="bg-card p-4 rounded-lg border border-blue-100 dark:border-blue-900">
                       <div className="flex items-center gap-3 mb-2">
@@ -137,7 +137,7 @@ export default function RetailDistributionPage() {
                 <img
                   src="/7709397_3721088.svg?"
                   alt="E-Commerce Fulfillment"
-                  className="object-cover h-[40rem]"
+                  className="object-cover lg:h-[40rem]"
                 />
               </div>
             </div>
@@ -172,7 +172,7 @@ export default function RetailDistributionPage() {
 
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">Partner Retailers</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
                 {accounts.map((brand, index) => (
                     <div
                       key={index}

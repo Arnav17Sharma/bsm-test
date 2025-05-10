@@ -94,7 +94,7 @@ export default function EcommerceDistributionPage() {
 
               <div className="space-y-4">
                 <h2 className="text-2xl font-bold">Key Features</h2>
-                <div className="grid gap-3 sm:grid-cols-2">
+                <div className="grid gap-3 grid-cols-2">
                   {features.map((feature, index) => (
                     <div key={index} className="bg-card p-4 rounded-lg border border-blue-100 dark:border-blue-900">
                       <div className="flex items-center gap-3 mb-2">

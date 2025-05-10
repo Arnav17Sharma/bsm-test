@@ -96,9 +96,8 @@ export default function Header() {
       isScrolled
         ? "bg-white shadow-lg dark:bg-slate-900/90"
         : "bg-white/90 shadow-md dark:bg-transparent"
-    )}
-  >
-      <div className="container flex h-20 items-center justify-between px-4 md:px-6">
+    )}>
+      <div className="container flex h-20 items-center justify-between px-4 md:px-6" style={{width: "100%"}}>
         <Link href="/" className="flex items-center gap-2">
         {/* <svg width="1211" height="253" viewBox="0 0 1211 253" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "180px", height: "auto" }}>
           <g id="LOGOMAIN">
@@ -264,7 +263,7 @@ export default function Header() {
           <ModeToggle />
         </nav>
         <div className="flex items-center gap-2 md:hidden">
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <Button
             variant="ghost"
             size="icon"

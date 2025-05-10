@@ -111,14 +111,14 @@ export default function Hero() {
                 Next-Gen Distribution
               </motion.div>
               <motion.h1
-  variants={itemVariants}
-  className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-gradient-to-r from-blue-600 to-red-600 group text-white" 
-  style={{
-    textShadow: "0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6)",
-  }}
->
-  Tech-Enabled Distribution
-</motion.h1>
+                variants={itemVariants}
+                className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-gradient-to-r from-blue-600 to-red-600 group text-white" 
+                style={{
+                  textShadow: "0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6)",
+                }}
+              >
+                Tech-Enabled Distribution
+              </motion.h1>
               <motion.p variants={itemVariants} className="text-white md:text-xl">
                 Optimizing omnichannel commerce with data-driven inventory management, demand forecasting, and precision
                 logistics.

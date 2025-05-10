@@ -94,7 +94,7 @@ export default function BlogsPage() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-10">
+          <div className="flex flex-col sm:flex-row gap-4 pt-10 mb-5">
             <div>
               <h2 className="text-3xl font-bold tracking-tight sm:text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 mb-4">Subscribe to Our Newsletter</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
@@ -181,11 +181,11 @@ export default function BlogsPage() {
             ))}
           </div>
 
-          <div className="mt-12 flex justify-center">
+          {/* <div className="mt-12 flex justify-center">
             <Button variant="outline" className="border-blue-100 dark:border-blue-900">
               Load More Articles
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 

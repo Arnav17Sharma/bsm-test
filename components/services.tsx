@@ -109,14 +109,14 @@ export default function Services() {
         </div>
 
         <div className="my-12">
-        <div className="flex" >
-          <div className="w-8/12 flex" style={{justifyContent: "right"}}>
+        <div className="flex flex-col lg:flex-row items-center justify-center">
+          <div className="w-8/12 flex justify-center lg:justify-end">
             <MapWithTooltip/>
           </div>
           {/* Metrics Counter Section */}
           <motion.div
             variants={itemVariants}
-            className="w-4/12 flex flex-col justify-left gap-10 ml-20"
+            className="w-4/12 flex flex-col items-center justify-center lg:justify-left gap-10 lg:ml-20"
           >
             <div className="flex h-[auto] w-[340px] flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 p-4 shadow-lg transition-all border border-blue-100 dark:border-blue-900">
               <img src="/locations_3452143.png" alt="Office Icon" className="h-12 w-12" />
@@ -145,7 +145,7 @@ export default function Services() {
       <div className="container px-4 md:px-6 relative z-10 mt-10">
         
         <div className="flex flex-col items-center justify-center text-center z-0">
-          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xl text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
+          <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-md lg:text-xl text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-4">
             <TrendingUp className="mr-1 h-3.5 w-3.5" />
             Discover Our Offerings
           </div>
@@ -168,7 +168,7 @@ export default function Services() {
               <motion.div key={index} variants={itemVariants}>
                 <Link href={service.href} className="block">
                   <Card
-                    className={`h-[500px] overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-blue-100 dark:border-blue-900`}
+                    className={`h-auto lg:h-[500px] overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-blue-100 dark:border-blue-900`}
                   >
                     <CardHeader className="pb-2 pt-5">
                       <div className="h-[260px] mb-2 flex items-center justify-center">
@@ -180,10 +180,10 @@ export default function Services() {
                       </CardTitle>
                     </CardHeader>
                     
-                    <CardContent className="h-[80px] ">
+                    <CardContent className="lg:mt-4 h-[80px] ">
                       <CardDescription className="text-base">{service.description}</CardDescription>
 
-                      <div className="mt-4 pt-4 border-t border-blue-100 dark:border-blue-900/50 flex items-center gap-2">
+                      <div className="mt-4 py-4 border-t border-blue-100 dark:border-blue-900/50 flex items-center gap-2">
                         <div className="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
                           <ShieldCheck className="h-3 w-3 text-blue-600 dark:text-blue-400" />
                         </div>

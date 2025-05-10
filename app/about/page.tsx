@@ -259,129 +259,123 @@ export default function AboutPage() {
       <SectionDivider />
 
       <section className="py-20 bg-background relative">
-      <div className="absolute inset-0 opacity-30">
-        <MagnetLines
-          containerSize="100%"
-          lineColor="#6366f1"
-          lineWidth="0.5vmin"
-          lineHeight="4vmin"
-          rows={12}
-          columns={12}
-          baseAngle={-45}
-        />
-      </div>
-        <div className="absolute inset-0 overflow-hidden">
-          <GridBackground className="opacity-20" />
-        </div>
-        <div className="container px-4 md:px-6 relative z-10">
-          <div className="flex flex-col items-center justify-center text-center mb-12">
-            <h2 className="text-3xl font-bold">Our Journey</h2>
-            <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl">
-              Three decades of evolution and growth in distribution excellence
-            </p>
-          </div>
+  {/* Background Lines */}
+  <div className="absolute inset-0 opacity-30">
+    <MagnetLines
+      containerSize="100%"
+      lineColor="#6366f1"
+      lineWidth="0.5vmin"
+      lineHeight="4vmin"
+      rows={12}
+      columns={12}
+      baseAngle={-45}
+    />
+  </div>
 
-          <div className="relative">
-            {/* Timeline line */}
-            <motion.div
-              className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-red-600 transform -translate-x-1/2 hidden md:block"
-              initial={{ height: "0%" }}
-              whileInView={{ height: "100%" }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-              viewport={{ once: true }}
-            ></motion.div>
+  {/* Grid Background */}
+  <div className="absolute inset-0 overflow-hidden">
+    <GridBackground className="opacity-20" />
+  </div>
 
-            {/* Timeline events */}
+  {/* Main Container */}
+  <div className="container px-4 md:px-6 relative z-10">
+    {/* Heading */}
+    <div className="flex flex-col items-center justify-center text-center mb-12">
+      <h2 className="text-3xl font-bold">Our Journey</h2>
+      <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl">
+        Three decades of evolution and growth in distribution excellence
+      </p>
+    </div>
+
+    {/* Timeline Line */}
+    <div className="relative">
+      <motion.div
+        className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-red-600 transform -translate-x-1/2 hidden md:block"
+        initial={{ height: "0%" }}
+        whileInView={{ height: "100%" }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      />
+
+      {/* Timeline Events */}
+      <motion.div
+        className="space-y-16 relative"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.3,
+            },
+          },
+        }}
+      >
+        {timeline.map((event, index) => (
+          <motion.div
+            key={index}
+            className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.5 },
+              },
+            }}
+          >
+            {/* Text Content */}
             <motion.div
-              className="space-y-12 relative"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                  opacity: 1,
-                  transition: {
-                    staggerChildren: 0.3,
-                  },
-                },
-              }}
+              className={`flex-1 text-center ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.2 }}
             >
-              {timeline.map((event, index) => (
-                <motion.div
-                  key={index}
-                  className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      transition: { duration: 0.5 },
-                    },
-                  }}
-                >
-                  <motion.div
-                    className={`flex-1 text-center ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}
-                    whileHover={{ y: -5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <motion.div
-                      className="inline-block bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md mb-2"
-                      whileHover={{ scale: 1.05, backgroundColor: "#ED1C24" }}
-                    >
-                      {event.year}
-                    </motion.div>
-                    <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
-                      {event.title}
-                    </h3>
-                    <div className={`${index % 2 === 0 ? "float-right pl-20" : "float-left pr-20"}`} style={{width: "40%"}}>
-                    <p className="text-muted-foreground transition-colors duration-300">{event.description}</p>
-                    </div>
-                  </motion.div>
+              <motion.div
+                className="inline-block bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md mb-2"
+                whileHover={{ scale: 1.05 }}
+              >
+                {event.year}
+              </motion.div>
 
-                  <motion.div
-                    className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-500/10 to-red-500/10 ring-4 ring-background"
-                    whileHover={{ scale: 1.15, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 10 }}
-                  >
-                    <motion.div
-                      className="flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-slate-900 shadow-lg border border-blue-100 dark:border-blue-900"
-                      whileHover={{ backgroundColor: "#f0f9ff" }}
-                    >
-                      {event.icon}
-                    </motion.div>
-                    <motion.div
-                      className="absolute inset-0 rounded-full blur-md bg-gradient-to-r from-blue-500/20 to-red-500/20"
-                      whileHover={{ opacity: 0.8 }}
-                    ></motion.div>
-                  </motion.div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                {event.title}
+              </h3>
 
-                  <motion.div
-                    className="flex-1 text-center md:hidden w-50"
-                    whileHover={{ y: -5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <motion.div
-                      className="inline-block bg-gradient-to-r from-blue-600 to-red-600 text-white text-xs font-medium px-2 py-1 rounded-md mb-2"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      {event.year}
-                    </motion.div>
-                    <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
-                      {event.title}
-                    </h3>
-                    <p className="text-muted-foreground transition-colors duration-300">
-                      {event.description}
-                    </p>
-                  </motion.div>
-                </motion.div>
-              ))}
+              <div className={`md:w-[40%] w-full mx-auto md:mx-0 px-4 md:px-0  ${index % 2 === 0 ? "md:float-right md:pl-20 text-right" : "md:float-left md:pr-20 text-left"}`}>
+                <p className="text-sm sm:text-base text-muted-foreground transition-colors duration-300">
+                  {event.description}
+                </p>
+              </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
+
+            {/* Icon Bubble */}
+            <motion.div
+              className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-blue-500/10 to-red-500/10 ring-4 ring-background"
+              whileHover={{ scale: 1.15, rotate: 5 }}
+              transition={{ type: "spring", stiffness: 300, damping: 10 }}
+            >
+              <motion.div
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-slate-900 shadow-lg border border-blue-100 dark:border-blue-900"
+                whileHover={{ backgroundColor: "#f0f9ff" }}
+              >
+                {event.icon}
+              </motion.div>
+              <motion.div
+                className="absolute inset-0 rounded-full blur-md bg-gradient-to-r from-blue-500/20 to-red-500/20"
+                whileHover={{ opacity: 0.8 }}
+              ></motion.div>
+            </motion.div>
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+  </div>
+</section>
+
 
       <SectionDivider />
 

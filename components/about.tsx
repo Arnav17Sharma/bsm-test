@@ -79,15 +79,15 @@ export default function About() {
           className={`grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16 items-center ${
             isInView ? "start-css-animation" : ""
           }`}>
-            <motion.div variants={itemVariants} className="space-y-4">
+            <motion.div variants={itemVariants} className="space-y-4 w-full">
             <div className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-md text-red-600 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400 mb-2">
               <Users className="mr-1 h-3.5 w-3.5" />
               About BSM
             </div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-white">
+            <h2 className="mr-5 lg:text-3xl font-bold tracking-tight text-4xl md:text-5xl text-white w-full break-words">
               Bridging Brands with Efficient Market Distribution
             </h2>
-            <p className="md:text-xl" style={{color: "#D6D6D6"}}>
+            <p className="lg:text-xl" style={{color: "#D6D6D6"}}>
               BSM was founded to bridge the gap between brands and efficient market distribution. With deep expertise in
               logistics and commerce execution, we have built a system where every inventory movement and sales decision
               is backed by data-driven intelligence.
@@ -95,7 +95,7 @@ export default function About() {
             <div className="space-y-3 pt-2">
               {keyPoints.map((point, index) => (
                 <div key={index} className="flex items-center gap-3 bg-blue-50 dark:bg-blue-900/20 p-2 rounded-md">
-                  <div className="w-8 h-8 rounded-full bg-white dark:bg-slate-900 flex items-center justify-center shadow-sm border border-red-100 dark:border-red-900">
+                  <div className="lg:w-8 lg:h-8 rounded-full bg-white dark:bg-slate-900 flex items-center justify-center shadow-sm border border-red-100 dark:border-red-900">
                     {point.icon}
                   </div>
                   <span>{point.text}</span>
@@ -115,7 +115,13 @@ export default function About() {
               <div className={`aspect-square overflow-hidden rounded-xl flex justify-center ${
                   isInView ? "start-css-animation" : ""
                 }`}>
-                  <svg width="551" height="506" viewBox="0 0 551 506" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                  <svg
+  className="w-90 h-90 lg:w-[551px] lg:h-[506px]"
+  viewBox="0 0 551 506"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+>
 <g id="SVG_MAIN">
 <g id="fork_trucks">
 <g id="Group 17">
