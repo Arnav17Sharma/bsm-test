@@ -106,7 +106,9 @@ export default function IntroAnimation({ onComplete, onSkip }: IntroAnimationPro
             <div className="flex items-center gap-4 bg-white dark:bg-slate-900 p-8 rounded-xl shadow-lg">
               {/* <Package2 className="h-20 w-20 text-blue-500" />
               <span className="font-bold text-6xl">BSM</span> */}
-              <svg width="1211" height="253" viewBox="0 0 1211 253" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg 
+              className="w-[250px] h-auto lg:w-[1211px] lg:h-[253px]"
+              width="1211" height="253" viewBox="0 0 1211 253" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="LOGOMAIN">
 <g id="logo2">
 <g id="Group">
