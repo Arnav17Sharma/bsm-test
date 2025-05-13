@@ -8,13 +8,16 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowRight, Mail, MessageSquare, Send, User } from "lucide-react"
+import { useToast } from "@/hooks/use-toast"
 
 export default function Cta() {
   const ref = useRef(null)
+  const { toast } = useToast()
   const isInView = useInView(ref, { once: true, amount: 0.5 })
   const [formState, setFormState] = useState({
     name: "",
     email: "",
+    company: "",
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -25,16 +28,46 @@ export default function Cta() {
     setFormState((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      })
+
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "We'll get back to you as soon as possible.",
+        })
+        setFormState({
+          name: "",
+          email: "",
+          company: "",
+          message: "",
+        })
+      } else {
+        toast({
+          title: "Something went wrong",
+          description: "Please try again later.",
+          variant: "destructive",
+        })
+      }
+    } catch (error) {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again later.",
+        variant: "destructive",
+      })
+    } finally {
       setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormState({ name: "", email: "", message: "" })
-    }, 1500)
+    }
   }
 
   const containerVariants = {
