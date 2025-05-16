@@ -19,7 +19,7 @@ export default function Footer() {
               brands.
             </p>
             <div className="flex space-x-4 pt-2">
-              <Link href="#" className="text-muted-foreground hover:text-blue-500 transition-colors">
+              {/* <Link href="#" className="text-muted-foreground hover:text-blue-500 transition-colors">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
@@ -30,8 +30,8 @@ export default function Footer() {
               <Link href="#" className="text-muted-foreground hover:text-blue-500 transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-blue-500 transition-colors">
+              </Link> */}
+              <Link href="https://www.linkedin.com/company/bs-marketing-company/" className="text-muted-foreground hover:text-blue-500 transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
