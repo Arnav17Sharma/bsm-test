@@ -257,15 +257,15 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 text-center">
             <div className="bg-card p-6 rounded-xl shadow-sm border border-blue-100 dark:border-blue-900">
               <h3 className="font-semibold text-lg mb-2">Delhi-NCR (Headquarters)</h3>
               <p className="text-muted-foreground mb-4">
-                123 Business Park, Sector 62
+                A-81, Industrial Area Phase I, Naraina Industrial Area Phase 1, Naraina
                 <br />
-                Noida, Uttar Pradesh 201301
+                New Delhi, Delhi, 110028
               </p>
-              <div className="flex items-center gap-2 text-sm">
+              <div className="flex items-center justify-center gap-2 text-sm">
                 <Phone className="h-4 w-4 text-blue-500" />
                 <span>+91 9711577145</span>
               </div>
@@ -274,26 +274,11 @@ export default function ContactPage() {
             <div className="bg-card p-6 rounded-xl shadow-sm border border-blue-100 dark:border-blue-900">
               <h3 className="font-semibold text-lg mb-2">Mumbai Office</h3>
               <p className="text-muted-foreground mb-4">
-                456 Commerce Center
-                <br />
-                Andheri East, Mumbai 400069
+                Bhiwandi
               </p>
-              <div className="flex items-center gap-2 text-sm">
+              <div className="flex items-center justify-center gap-2 text-sm">
                 <Phone className="h-4 w-4 text-blue-500" />
                 <span>+91 9876543210</span>
-              </div>
-            </div>
-
-            <div className="bg-card p-6 rounded-xl shadow-sm border border-blue-100 dark:border-blue-900">
-              <h3 className="font-semibold text-lg mb-2">Bangalore Office</h3>
-              <p className="text-muted-foreground mb-4">
-                789 Tech Park
-                <br />
-                Whitefield, Bangalore 560066
-              </p>
-              <div className="flex items-center gap-2 text-sm">
-                <Phone className="h-4 w-4 text-blue-500" />
-                <span>+91 9876543211</span>
               </div>
             </div>
           </div>

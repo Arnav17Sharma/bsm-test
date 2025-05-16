@@ -70,7 +70,7 @@ export default function Brands() {
     { label: "Active Accounts", value: 32, suffix: "+" },
     { label: "Inventory Accuracy", value: 99.5, suffix: "%" },
     { label: "on-Time TAT Achievement", value: 98, suffix: "%" },
-    { label: "Annual Units Processed", value: 10, suffix: "Mn +" },
+    { label: "Annual Units Processed", value: 3, suffix: "Mn +" },
 
   ]
 

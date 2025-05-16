@@ -124,6 +124,7 @@ export default function AboutPage() {
     "Pharmaceuticals & Healthcare",
     "Packaged Foods & Beverages",
     "Consumer Electronics & Lifestyle Products",
+    "Baby Care"
   ]
 
   const team = [
@@ -132,18 +133,21 @@ export default function AboutPage() {
       position: "Founder & Managing Partner",
       bio: "With over three decades of hands-on experience in distribution and supply chain management, Mukesh Kumar is the driving force behind BSM. A seasoned entrepreneur with a dual degree in commerce, he founded BSM with a vision to streamline logistics for modern retail. Under his leadership, BSM has grown into a trusted name in the industry, known for its reliability, scale, and operational excellence.",
       image: "/placeholder.svg?height=300&width=300",
+      email: "mukesh@bsmarketingcompany.com"
     },
     {
       name: "Samarth Khandelwal",
       position: "Director, E-Commerce",
       bio: "Samarth leads the e-commerce vertical at BSM, bringing a unique blend of investment acumen and operational insight. He began his career in private equity, working on high-impact deals before channeling his passion into building scalable supply chain systems. An MBA from MDI Gurgaon, Samarth plays a pivotal role in driving BSM’s digital transformation and pan-India growth across online retail channels.",
       image: "/placeholder.svg?height=300&width=300",
+      email: "samarth@bsmarketingcompany.com"
     },
     {
       name: "Sarthak Khandelwal",
       position: "Director, Distribution Management",
       bio: "Sarthak brings deep experience in FMCG sales, having worked with leading companies like Godrej. An MBA from IMT Ghaziabad, he is instrumental in building and scaling BSM’s distribution network. His strong commercial acumen and ground-level understanding of retail operations drive execution strength across the organization.",
       image: "/placeholder.svg?height=300&width=300",
+      email: "sarthak@bsmarketingcompany.com"
     },
   ]
 
@@ -455,6 +459,12 @@ export default function AboutPage() {
                   <h3 className="text-xl font-bold">{member.name}</h3>
                   <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 mb-2">
                     {member.position}
+                  </p>
+                  
+                  <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 mb-2">
+                    <Link href={`mailto:${member.email}`}>
+                      {member.email}
+                    </Link>
                   </p>
                   <p className="text-muted-foreground">{member.bio}</p>
                 </div>

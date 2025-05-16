@@ -22,52 +22,36 @@ interface Testimonial {
 export default function Testimonials({ className }: TestimonialsProps) {
   const testimonials: Testimonial[] = [
     {
-      quote: "Impressed by the professionalism and attention to detail.",
-      name: "Guy Hawkins",
+      quote: "We've been working with BSM for more than 9  years and consistently find them to be a reliable and trustworthy source for our   distribution network. Their inventory is always well-stocked, and they're always quick to respond to our inquiries, even when we need something urgently. With BSM we have achieved new heights and We appreciate their professionalism and dedication to our business!",
+      name: "Pushkar Negi",
       handle: "@guyhawkins",
       avatar: "/placeholder.svg?height=100&width=100",
-      company: "TechCorp",
-      position: "CEO",
+      company: "NKAM",
+      position: "",
     },
     {
-      quote: "A seamless experience from start to finish. Highly recommend!",
-      name: "Karla Lynn",
+      quote: "BSM strikes a unique balance between flexibility and operational excellency. Their team operates with the dedication and alignment of an in-house function rather than an external partner. What sets them apart even further is their proactive approach to problem-solving and their deep understanding of the Amazon ecosystem, which enables them to anticipate challenges and implement effective solutions ahead of time.",
+      name: "Rishabh Rathod",
       handle: "@karlalynn98",
       avatar: "/placeholder.svg?height=100&width=100",
-      company: "BeautyBrands",
-      position: "Marketing Director",
+      company: "Amazon",
+      position: "Category Manager",
     },
     {
-      quote: "Reliable and trustworthy. Made my life so much easier!",
+      quote: "BSM team ensures that they listen and analyze before they deliver. The capability to understand the client needs is far superior than peers. We like BSM because they are no distributors who shout from roof tops on what needs to be done. They are capable of coming down to trenches and working with us",
       name: "Jane Cooper",
       handle: "@janecooper",
       avatar: "/placeholder.svg?height=100&width=100",
-      company: "HealthPlus",
-      position: "Operations Manager",
+      company: "Apollo Pharmacies",
+      position: "Senior Category Manager",
     },
     {
-      quote: "BSM transformed our distribution strategy completely. Outstanding results.",
+      quote: "BSM is less like a distribution partner and more like a business partner. Their team integrates well with internal resources and internal buy-ins are given significant importance in BSM operations",
       name: "Robert Chen",
       handle: "@robertchen",
       avatar: "/placeholder.svg?height=100&width=100",
-      company: "GlobeRetail",
-      position: "Supply Chain Director",
-    },
-    {
-      quote: "Their data-driven approach helped us reduce costs by 30% while improving delivery times.",
-      name: "Priya Sharma",
-      handle: "@priyasharma",
-      avatar: "/placeholder.svg?height=100&width=100",
-      company: "NatureCare",
-      position: "Product Manager",
-    },
-    {
-      quote: "The team at BSM goes above and beyond. True partners in our growth journey.",
-      name: "Michael Torres",
-      handle: "@michaeltorres",
-      avatar: "/placeholder.svg?height=100&width=100",
-      company: "ElectroGoods",
-      position: "Founder",
+      company: "Shwabe",
+      position: "Shwabe India Team",
     },
   ]
 
@@ -108,11 +92,11 @@ export default function Testimonials({ className }: TestimonialsProps) {
           dragConstraints={{ right: 0, left: -width }}
           whileTap={{ cursor: "grabbing" }}
           animate={{
-            x: [-width / 2, 0],
+            x: [0, -width],
             transition: {
               x: {
-                repeat: Number.POSITIVE_INFINITY,
-                repeatType: "reverse",
+                repeat: Infinity,
+                repeatType: "loop",
                 duration: 20,
                 ease: "linear",
               },
@@ -120,7 +104,7 @@ export default function Testimonials({ className }: TestimonialsProps) {
           }}
         >
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] px-4 py-2 flex-shrink-0">
+            <div key={index} className="max-w-[350px] sm:max-w-[350px] md:max-w-[800px] px-4 py-2 flex-shrink-0">
               <div className="bg-background rounded-lg p-6 shadow-md border border-gray-100 dark:border-gray-800 h-full flex flex-col">
                 <div className="text-gray-300 dark:text-gray-600 mb-4">
                   <Quote size={32} />
@@ -134,7 +118,7 @@ export default function Testimonials({ className }: TestimonialsProps) {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div>
+                  <div className="w-10">
                     <p className="font-medium text-sm">{testimonial.name}</p>
                     <p className="text-xs text-muted-foreground">{testimonial.handle}</p>
                   </div>

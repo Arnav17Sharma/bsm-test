@@ -42,38 +42,56 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/services/ecommerce-distribution"
                   className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
                 >
                   <span className="w-1 h-1 rounded-full bg-blue-500"></span>
-                  E-Commerce Distribution
+                  E-Commerce Distribution & Fulfillment
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/retail-distribution"
                   className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
                 >
                   <span className="w-1 h-1 rounded-full bg-blue-500"></span>
-                  Retail Distribution
+                  Retail & Modern Trade Distribution
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/quick-commerce"
                   className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
                 >
                   <span className="w-1 h-1 rounded-full bg-blue-500"></span>
-                  Quick Commerce
+                  Quick Commerce Execution
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/stockist-services"
                   className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
                 >
                   <span className="w-1 h-1 rounded-full bg-blue-500"></span>
-                  Inventory Management
+                  Super Stockist & C&F Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/pricing-inventory"
+                  className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
+                >
+                  <span className="w-1 h-1 rounded-full bg-blue-500"></span>
+                  Strategic Pricing & Inventory Management
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/kitting-bundling"
+                  className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
+                >
+                  <span className="w-1 h-1 rounded-full bg-blue-500"></span>
+                  Customized Kitting & Bundling Solutions
                 </Link>
               </li>
             </ul>
@@ -83,7 +101,16 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/"
+                  className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
+                >
+                  <span className="w-1 h-1 rounded-full bg-blue-500"></span>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
                   className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
                 >
                   <span className="w-1 h-1 rounded-full bg-blue-500"></span>
@@ -92,25 +119,16 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/blogs"
                   className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
                 >
                   <span className="w-1 h-1 rounded-full bg-blue-500"></span>
-                  Case Studies
+                  Blogs
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
-                >
-                  <span className="w-1 h-1 rounded-full bg-blue-500"></span>
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
+                  href="/contact"
                   className="text-sm text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
                 >
                   <span className="w-1 h-1 rounded-full bg-blue-500"></span>

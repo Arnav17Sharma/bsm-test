@@ -44,7 +44,7 @@ export default function KittingBundlingPage() {
     "Seasonal Collections",
     "Limited Edition Boxes",
     "Subscription Boxes",
-    "Cross-Category Bundles",
+    "Cross-Category Bundles"
   ]
 
   return (

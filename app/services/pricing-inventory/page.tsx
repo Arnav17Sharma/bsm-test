@@ -38,14 +38,14 @@ export default function PricingInventoryPage() {
   ]
 
   const tools = [
-    "AI-Powered Price Optimization",
+    "Seasonal Trend Analyzer",
+    "Brand Catalogue Management",
     "Demand Forecasting Engine",
     "Inventory Health Dashboard",
     "Competitive Analysis Tools",
     "Margin Impact Simulator",
     "Promotion ROI Calculator",
     "Channel Performance Tracker",
-    "Seasonal Trend Analyzer",
   ]
 
   return (
