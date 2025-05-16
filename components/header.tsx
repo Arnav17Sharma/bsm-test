@@ -85,7 +85,7 @@ export default function Header() {
       ],
     },
     { name: "About", href: "/about" },
-    { name: "Case Studies", href: "/case-studies" },
+    // { name: "Case Studies", href: "/case-studies" },
     { name: "Blogs", href: "/blogs" },
   ]
 
