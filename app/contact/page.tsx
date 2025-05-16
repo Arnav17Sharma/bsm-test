@@ -276,10 +276,10 @@ export default function ContactPage() {
               <p className="text-muted-foreground mb-4">
                 Bhiwandi
               </p>
-              <div className="flex items-center justify-center gap-2 text-sm">
+              {/* <div className="flex items-center justify-center gap-2 text-sm">
                 <Phone className="h-4 w-4 text-blue-500" />
                 <span>+91 9876543210</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
