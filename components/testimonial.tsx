@@ -25,31 +25,31 @@ export default function Testimonials({ className }: TestimonialsProps) {
       quote: "We've been working with BSM for more than 9  years and consistently find them to be a reliable and trustworthy source for our   distribution network. Their inventory is always well-stocked, and they're always quick to respond to our inquiries, even when we need something urgently. With BSM we have achieved new heights and We appreciate their professionalism and dedication to our business!",
       name: "Pushkar Negi",
       handle: "@guyhawkins",
-      avatar: "/placeholder.svg?height=100&width=100",
-      company: "NKAM",
-      position: "",
+      avatar: "/brands/Untitled design.png",
+      company: "Sebamed India",
+      position: "NKAM",
     },
     {
       quote: "BSM strikes a unique balance between flexibility and operational excellency. Their team operates with the dedication and alignment of an in-house function rather than an external partner. What sets them apart even further is their proactive approach to problem-solving and their deep understanding of the Amazon ecosystem, which enables them to anticipate challenges and implement effective solutions ahead of time.",
       name: "Rishabh Rathod",
       handle: "@karlalynn98",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/accounts/amazon.svg",
       company: "Amazon",
       position: "Category Manager",
     },
     {
       quote: "BSM team ensures that they listen and analyze before they deliver. The capability to understand the client needs is far superior than peers. We like BSM because they are no distributors who shout from roof tops on what needs to be done. They are capable of coming down to trenches and working with us",
-      name: "Jane Cooper",
       handle: "@janecooper",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/accounts/apollo.png",
       company: "Apollo Pharmacies",
       position: "Senior Category Manager",
+      name: ""
     },
     {
       quote: "BSM is less like a distribution partner and more like a business partner. Their team integrates well with internal resources and internal buy-ins are given significant importance in BSM operations",
-      name: "Robert Chen",
+      name: "",
       handle: "@robertchen",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/brands/schwabe.png",
       company: "Shwabe",
       position: "Shwabe India Team",
     },
@@ -115,12 +115,12 @@ export default function Testimonials({ className }: TestimonialsProps) {
                     <img
                       src={testimonial.avatar || "/placeholder.svg"}
                       alt={testimonial.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
-                  <div className="w-10">
-                    <p className="font-medium text-sm">{testimonial.name}</p>
-                    <p className="text-xs text-muted-foreground">{testimonial.handle}</p>
+                  <div>
+                    <p className="font-medium text-sm">{testimonial.name || testimonial.position}</p>
+                    <p className="text-xs text-muted-foreground">{testimonial.company}</p>
                   </div>
                 </div>
               </div>
