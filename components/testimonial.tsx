@@ -73,8 +73,8 @@ export default function Testimonials({ className }: TestimonialsProps) {
             <Users className="mr-1 h-3.5 w-3.5" />
             Testimonials
           </div>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-white">Transformative Client Experiences</h2>
-          <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-white">Stakeholder Experiences</h2>
+          <p className="mt-4 text-white md:text-xl max-w-3xl">
           Hear what our clients have to say about their experience working with BSM
           </p>
         </div>
