@@ -55,7 +55,7 @@ export function generateContactConfirmationEmail(name: string, email: string, me
 
 export function generateAdminNotificationEmail(name: string, email: string, company: string, message: string) {
   return {
-    to: "arnavsharma1702@gmail.com", // Replace with your admin email
+    to: "samarth@bsmarketingcompany.com", // Replace with your admin email
     subject: "New Contact Form Submission",
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
