@@ -26,6 +26,7 @@ export async function sendEmail({
 }
 
 export function generateContactConfirmationEmail(name: string, email: string, message: string) {
+  console.log(email)
   return {
     to: email,
     subject: "Thank you for contacting BSM",
